@@ -1,0 +1,545 @@
+{
+    "#comment": "Canie Zomboss",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_TRIP_TO_RIFT]",
+                "DisablePlantBoosts": false,
+                "GridItemLevel": 1,
+                "LevelMutator": "RTID(LevelMutator@CurrentLevel)",
+                "LevelNumber": "",
+                "LevelPowerupSet": "",
+                "Loot": "RTID(NoLoot@LevelModules)",
+                "LossModule": "RTID(RiftOutro@LevelModules)",
+                "Modules": [
+                    "RTID(FrontLawnMowers@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(LastStand@CurrentLevel)",
+                    "RTID(LevelDifficultyScaling@CurrentLevel)",
+                    "RTID(SeedPacketHalfTimeModule@LevelModules)",
+                    "RTID(ZombossBattle@CurrentLevel)",
+                    "RTID(Gravestones@CurrentLevel)",
+                    "RTID(WaveDuplicator@CurrentLevel)",
+                    "RTID(PerkActivator@CurrentLevel)",
+                    "RTID(DefaultZombossRiftPointOfLoss@LevelModules)"
+                ],
+                "Name": "",
+                "NormalPresentTable": "dark_normal_01",
+                "PerksDisabledInLevel": [
+                    "moarscore"
+                ],
+                "PerksDisabledPerDifficulty": [
+                    [],
+                    [],
+                    []
+                ],
+                "ShinyPresentTable": "dark_shiny_01",
+                "StageModule": "RTID(CarnivalStage@LevelModules)",
+                "SuppressAccountUpgrades": true,
+                "SuppressDynamicTutorial": true,
+                "SuppressPlantfoodPurchase": false,
+                "VictoryModule": "RTID(RiftOutro@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "Gravestones"
+            ],
+            "objclass": "GravestoneProperties",
+            "objdata": {
+                "GravestoneCount": 5,
+                "SpawnColumnEnd": 6,
+                "SpawnColumnStart": 6
+            }
+        },
+        {
+            "aliases": [
+                "PerkActivator"
+            ],
+            "objclass": "PerkHandlerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "LevelMutator"
+            ],
+            "objclass": "LevelMutatorModuleProperties",
+            "objdata": {
+                "MutatorTables": [
+                    "RTID(MutatorPropsRiftZomboss_Circus@LevelMutatorTables)",
+                    "RTID(MutatorRiftZombossBattery1@LevelMutatorTables)",
+                    "RTID(MutatorGridRiftMold7@LevelMutatorTables)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveDuplicator"
+            ],
+            "objclass": "WaveDuplicatorModuleProperties",
+            "objdata": {
+                "PeriodOfWavesToLoop": 6,
+                "WaveSetsToAppend": 20
+            }
+        },
+        {
+            "aliases": [
+                "ZombossBattle"
+            ],
+            "objclass": "ZombossRiftBattleModuleProperties",
+            "objdata": {
+                "ReservedColumnCount": 2,
+                "ShowInStreetView": true,
+                "SlideInStreetView": false,
+                "ZombossDeathColumn": 5,
+                "ZombossDeathRow": 3,
+                "ZombossMechType": "zombossmech_circus_rift",
+                "ZombossPhases": 3,
+                "ZombossSpawnGridPosition": {
+                    "mX": 6,
+                    "mY": 3
+                }
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "ExcludeListSunProducers": false,
+                "PlantExcludeList": [
+                    "spearmint",
+                    "peppermint",
+                    "appeasemint",
+                    "concealmint",
+                    "filamint",
+                    "wintermint",
+                    "bombardmint",
+                    "armamint",
+                    "ailmint",
+                    "reinforcemint",
+                    "containmint",
+                    "enchantmint",
+                    "enchantmint",
+                    "enforcemint",
+                    "enlightenmint",
+                    "blover"
+                ],
+                "PresetPlantList": [
+                    {
+                        "PlantType": "torchwood",
+                        "Level": -1
+                    }
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "LastStand"
+            ],
+            "objclass": "LastStandMinigameProperties",
+            "objdata": {
+                "PreSeedchooserFlow": "rift",
+                "StartingPlantfood": 0,
+                "StartingSun": 2225
+            }
+        },
+        {
+            "aliases": [
+                "LevelDifficultyScaling"
+            ],
+            "objclass": "LevelDifficultyScalingModuleProperties",
+            "objdata": {
+                "DifficultyRulesType": "RiftDifficulty",
+                "ZombieLevelSwaps": [
+                    {
+                        "Level": 1,
+                        "Swaps": [
+                            {
+                                "From": "RTID(carnie@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(carnie_armor1@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie_armor1@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(carnie_armor2@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie_armor2@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 3,
+                        "Swaps": [
+                            {
+                                "From": "RTID(carnie@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie@ZombieTypes)",
+                                    "RTID(carnie_armor1@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(carnie_armor1@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie_armor1@ZombieTypes)",
+                                    "RTID(carnie_armor2@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(carnie_armor2@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie_armor2@ZombieTypes)",
+                                    "RTID(carnie_imp@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 5,
+                        "Swaps": [
+                            {
+                                "From": "RTID(carnie@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie_armor1@ZombieTypes)",
+                                    "RTID(carnie_armor2@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(carnie_armor1@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie_armor2@ZombieTypes)",
+                                    "RTID(carnie_armor1@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(carnie_armor2@ZombieTypes)",
+                                "To": [
+                                    "RTID(carnie_armor2@ZombieTypes)",
+                                    "RTID(carnie_imp@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "DynamicZombies": [
+                    {
+                        "MaxPoints": 750,
+                        "PointIncrementPerWave": 75,
+                        "StartingPoints": 150,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(carnie@ZombieTypes)",
+                            "RTID(carnie_armor1@ZombieTypes)",
+                            "RTID(carnie_armor2@ZombieTypes)",
+                            "RTID(carnie_imp@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "MaxPoints": 750,
+                        "PointIncrementPerWave": 75,
+                        "StartingPoints": 150,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(carnie@ZombieTypes)",
+                            "RTID(carnie_armor1@ZombieTypes)",
+                            "RTID(carnie_armor2@ZombieTypes)",
+                            "RTID(carnie_imp@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "MaxPoints": 750,
+                        "PointIncrementPerWave": 75,
+                        "StartingPoints": 150,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(carnie@ZombieTypes)",
+                            "RTID(carnie_armor1@ZombieTypes)",
+                            "RTID(carnie_armor2@ZombieTypes)",
+                            "RTID(carnie_imp@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "MaxPoints": 1125,
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 350,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(carnie@ZombieTypes)",
+                            "RTID(carnie_armor1@ZombieTypes)",
+                            "RTID(carnie_armor2@ZombieTypes)",
+                            "RTID(carnie_imp@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "MaxPoints": 750,
+                        "PointIncrementPerWave": 75,
+                        "StartingPoints": 150,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(carnie@ZombieTypes)",
+                            "RTID(carnie_armor1@ZombieTypes)",
+                            "RTID(carnie_armor2@ZombieTypes)",
+                            "RTID(carnie_imp@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "MaxPoints": 750,
+                        "PointIncrementPerWave": 75,
+                        "StartingPoints": 150,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(carnie@ZombieTypes)",
+                            "RTID(carnie_armor1@ZombieTypes)",
+                            "RTID(carnie_armor2@ZombieTypes)",
+                            "RTID(carnie_imp@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "MaxPoints": 750,
+                        "PointIncrementPerWave": 75,
+                        "StartingPoints": 150,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(carnie@ZombieTypes)",
+                            "RTID(carnie_armor2@ZombieTypes)",
+                            "RTID(carnie_imp@ZombieTypes)"
+                        ]
+                    }
+                ],
+                "ManualStartup": true,
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 100,
+                "WaveCount": 10,
+                "WaveSpendingPointIncrement": 200,
+                "WaveSpendingPoints": 100,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)"
+                    ]
+                ],
+                "WavesAlwaysRandomized": true
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(carnie_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(carnie_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(carnie_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(carnie_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(carnie_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(carnie_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(carnie_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(carnie_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(carnie_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(carnie@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(carnie@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(carnie_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(carnie_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(carnie_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(carnie_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(carnie_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

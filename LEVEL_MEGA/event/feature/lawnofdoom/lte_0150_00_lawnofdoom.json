@@ -1,0 +1,435 @@
+{
+    "#comment": "Level Of The Day Default",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "DraperPromo": "none",
+                "FirstIntroNarrative": "",
+                "LevelNumber": 4,
+                "LevelPowerupSet": "LevelPowerupsDisabled",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(LevelEscalationModule@CurrentLevel)",
+                    "RTID(FastSunDropper@LevelModules)",
+                    "RTID(FrontLawnMowers@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(Gravestones@CurrentLevel)",
+                    "RTID(FrozenPlantPlacement@CurrentLevel)"
+                ],
+                "Name": "[LTE_LEVEL_NAME_LAWNOFDOOM]",
+                "StageModule": "RTID(RiftStageLawnOfDoom@LevelModules)",
+                "StartingSun": 0
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PresetPlantList": [
+                    {
+                        "Level": -1,
+                        "PlantType": "ghostpepper"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "chardguard"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "vamporcini"
+                    }
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "FrozenPlantPlacement"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "GridX": 5,
+                        "GridY": 2,
+                        "Level": "-1",
+                        "TypeName": "ghostpepper"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LevelEscalationModule"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "FlagCount": 4,
+                "PlantfoodToSpawnCount": 3,
+                "PointIncrementPerWave": 25,
+                "StartingPoints": 100,
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "WavesPerFlag": 2,
+                "ZombiePool": [
+                    "RTID(halloween_armor1@ZombieTypes)",
+                    "RTID(halloween@ZombieTypes)",
+                    "RTID(dark_wizard@ZombieTypes)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "MaxNextWaveHealthPercentage": 0.9,
+                "MinNextWaveHealthPercentage": 0.8,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)",
+                        "RTID(Wave2StormEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)",
+                        "RTID(Wave7StormEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave1"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave2"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave3"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dark_wizard@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave4"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(halloween_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dark_wizard@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(halloween_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave5"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(halloween_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(halloween_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dark_wizard@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave6"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dark_wizard@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dark_wizard@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave7"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave8"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(halloween_gargantuar@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Gravestones"
+            ],
+            "objclass": "GravestoneProperties",
+            "objdata": {
+                "ForceSpawnData": [
+                    {
+                        "GridX": 0,
+                        "GridY": 0
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 0
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 0
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 0
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 0
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 0,
+                        "TypeName": "gravestonePlantfoodOnDestruction"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 1
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 1
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 1
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 2
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 2
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 2
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 2,
+                        "TypeName": "gravestonePlantfoodOnDestruction"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 2
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 3
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 3
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 3,
+                        "TypeName": "gravestonePlantfoodOnDestruction"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 3
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 4
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 4
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 4
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 4
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 4
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave2StormEvent0"
+            ],
+            "objclass": "StormZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 5,
+                "ColumnStart": 3,
+                "GroupSize": 2,
+                "TimeBetweenGroups": 1,
+                "Type": "sandstorm",
+                "Zombies": [
+                    {
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7StormEvent0"
+            ],
+            "objclass": "StormZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 8,
+                "ColumnStart": 4,
+                "GroupSize": 3,
+                "TimeBetweenGroups": 3,
+                "Type": "sandstorm",
+                "Zombies": [
+                    {
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(halloween@ZombieTypes)"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

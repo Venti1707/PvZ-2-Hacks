@@ -1,0 +1,587 @@
+{
+    "#comment": "lod_223 v1",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_TRIP_TO_RIFT]",
+                "Loot": "",
+                "LevelNumber": "",
+                "LevelPowerupSet": "LevelPowerupsBeghouled",
+                "Modules": [
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(BeghouledRiftIntro@LevelModules)",
+                    "RTID(FutureMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(RandomSpawner@CurrentLevel)",
+                    "RTID(BeghouledSeedBank@CurrentLevel)",
+                    "RTID(BeghouledProps@CurrentLevel)",
+                    "RTID(PerkActivator@CurrentLevel)",
+                    "RTID(LevelDifficultyScaling@CurrentLevel)"
+                ],
+                "MusicType": "MiniGame_B",
+                "Name": "[RIFT_LEVEL_NAME]",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "VictoryModule": "RTID(RiftOutro@LevelModules)",
+                "StageModule": "RTID(RiftStageZcorp@LevelModules)",
+                "LevelMutator": "RTID(LevelMutator@CurrentLevel)",
+                "PerksDisabledInLevel": [
+                    "bossbustercannon",
+                    "mineisyours",
+                    "utilitybelt_hypnoshroom",
+                    "utilitybelt_hurrikale",
+                    "utilitybelt_cherrybomb",
+                    "quickdelivery",
+                    "moarscore",
+                    "heavywatering",
+                    "mineisyours_shinevine",
+                    "mineisyours_goldbloom"
+                ],
+                "PerksDisabledPerDifficulty": [
+                    [],
+                    [],
+                    []
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PerkActivator"
+            ],
+            "objclass": "PerkHandlerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "LevelMutator"
+            ],
+            "objclass": "LevelMutatorModuleProperties",
+            "objdata": {
+                "MutatorTables": [
+                    "RTID(MutatorPropsBeghouled@LevelMutatorTables)",
+                    "RTID(LocalChallengeMutator@CurrentLevel)",
+                    "RTID(LocalMainChallengeMutator@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LocalMainChallengeMutator"
+            ],
+            "objclass": "LevelMutatorTableProps",
+            "objdata": {
+                "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_RIFT_NORMAL]",
+                "DescriptiveName": "[STARCHALLENGE_RIFT_NORMAL_NAME]"
+            }
+        },
+        {
+            "aliases": [
+                "LocalChallengeMutator"
+            ],
+            "objclass": "LevelMutatorTableProps",
+            "objdata": {
+                "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [
+                            "RTID(PlantsLost1@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [
+                            "RTID(SunUsed2@CurrentLevel)",
+                            "RTID(PlantsLost2@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [
+                            "RTID(SunUsed3@CurrentLevel)",
+                            "RTID(PlantsLost3@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PlantsLost1"
+            ],
+            "objclass": "StarChallengePlantsLostProps",
+            "objdata": {
+                "MaximumPlantsLost": 20
+            }
+        },
+        {
+            "aliases": [
+                "PlantsLost2"
+            ],
+            "objclass": "StarChallengePlantsLostProps",
+            "objdata": {
+                "MaximumPlantsLost": 15
+            }
+        },
+        {
+            "aliases": [
+                "PlantsLost3"
+            ],
+            "objclass": "StarChallengePlantsLostProps",
+            "objdata": {
+                "MaximumPlantsLost": 10
+            }
+        },
+        {
+            "aliases": [
+                "SunUsed2"
+            ],
+            "objclass": "StarChallengeSunUsedProps",
+            "objdata": {
+                "MaximumSun": 8000
+            }
+        },
+        {
+            "aliases": [
+                "SunUsed3"
+            ],
+            "objclass": "StarChallengeSunUsedProps",
+            "objdata": {
+                "MaximumSun": 7000
+            }
+        },
+        {
+            "aliases": [
+                "LevelDifficultyScaling"
+            ],
+            "objclass": "LevelDifficultyScalingModuleProperties",
+            "objdata": {
+                "DifficultyRulesType": "RiftDifficulty",
+                "ZombieLevelSwaps": [
+                    {
+                        "Level": 0,
+                        "Swaps": [
+                            {
+                                "From": "RTID(zcorp@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor2@ZombieTypes)",
+                                    "RTID(zcorp_armor2@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(dino@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(tutorial@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_armor2@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor2@ZombieTypes)",
+                                    "RTID(tutorial_armor4@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(roman@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_armor2@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor2@ZombieTypes)",
+                                    "RTID(roman_armor3@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_newspaper@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_balloon@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(modern_balloon@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 4,
+                        "Swaps": [
+                            {
+                                "From": "RTID(zcorp@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor2@ZombieTypes)",
+                                    "RTID(zcorp_armor2@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor2@ZombieTypes)",
+                                    "RTID(zcorp_armor2@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(dino@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(tutorial@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(tutorial_armor4@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(roman@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(roman_armor3@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_newspaper@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_balloon@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(modern_balloon@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 7,
+                        "Swaps": [
+                            {
+                                "From": "RTID(zcorp@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor2@ZombieTypes)",
+                                    "RTID(zcorp_armor2@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(dino@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor2@ZombieTypes)",
+                                    "RTID(zcorp_armor2@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(dino_armor4@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(tutorial@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(tutorial_armor4@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(roman@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor2@ZombieTypes)",
+                                    "RTID(zcorp_armor2@ZombieTypes)",
+                                    "RTID(roman_armor3@ZombieTypes)",
+                                    "RTID(zcorp_gargantuar@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_newspaper@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_balloon@ZombieTypes)",
+                                "To": [
+                                    "RTID(zcorp_fem@ZombieTypes)",
+                                    "RTID(zcorp@ZombieTypes)",
+                                    "RTID(zcorp_fem_armor1@ZombieTypes)",
+                                    "RTID(zcorp_armor1@ZombieTypes)",
+                                    "RTID(modern_balloon@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "BeghouledSeedBankProperties",
+            "aliases": [
+                "BeghouledSeedBank"
+            ],
+            "objdata": {
+                "PresetPlantList": [
+                    {
+                        "PlantType": "melonpult",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "endurian",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "moonflower",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "shadowpeashooter",
+                        "Level": -1
+                    }
+                ],
+                "BeghouledUpgradeList": [
+                    "murkadamia",
+                    "dusklobber"
+                ],
+                "SelectionMethod": "beghouled"
+            }
+        },
+        {
+            "objclass": "BeghouledPresetProperties",
+            "aliases": [
+                "BeghouledProps"
+            ],
+            "objdata": {
+                "MatchesToWin": 100,
+                "InitialPlants": [
+                    "sunshroom",
+                    "nightshade",
+                    "pepperpult",
+                    "kiwibeast"
+                ],
+                "UpgradeMap": [
+                    {
+                        "BasePlant": "sunshroom",
+                        "UpgradedPlant": "moonflower"
+                    },
+                    {
+                        "BasePlant": "pepperpult",
+                        "UpgradedPlant": "melonpult"
+                    },
+                    {
+                        "BasePlant": "melonpult",
+                        "UpgradedPlant": "dusklobber"
+                    },
+                    {
+                        "BasePlant": "nightshade",
+                        "UpgradedPlant": "shadowpeashooter"
+                    },
+                    {
+                        "BasePlant": "kiwibeast",
+                        "UpgradedPlant": "endurian"
+                    },
+                    {
+                        "BasePlant": "endurian",
+                        "UpgradedPlant": "murkadamia"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "BeghouledZombieSpawnerProperties",
+            "aliases": [
+                "RandomSpawner"
+            ],
+            "objdata": {
+                "MatchCountsToStageAdvance": [
+                    {
+                        "MatchCount": 20,
+                        "StageNumber": 1
+                    },
+                    {
+                        "MatchCount": 40,
+                        "StageNumber": 2
+                    },
+                    {
+                        "MatchCount": 60,
+                        "StageNumber": 3
+                    },
+                    {
+                        "MatchCount": 75,
+                        "StageNumber": 4
+                    }
+                ],
+                "Stages": [
+                    {
+                        "#comment": "Stage 0",
+                        "Types": [
+                            {
+                                "ZombieType": "zcorp"
+                            }
+                        ],
+                        "SpawnDelay": 2.0
+                    },
+                    {
+                        "#comment": "Stage 1",
+                        "Types": [
+                            {
+                                "ZombieType": "zcorp"
+                            },
+                            {
+                                "ZombieType": "dark"
+                            },
+                            {
+                                "ZombieType": "dark_imp_dragon"
+                            },
+                            {
+                                "ZombieType": "dark_king"
+                            }
+                        ],
+                        "SpawnDelay": 1.75
+                    },
+                    {
+                        "#comment": "Stage 2",
+                        "Types": [
+                            {
+                                "ZombieType": "dino_imp"
+                            },
+                            {
+                                "ZombieType": "zcorp"
+                            },
+                            {
+                                "ZombieType": "dino_bully"
+                            },
+                            {
+                                "ZombieType": "dino"
+                            }
+                        ],
+                        "SpawnDelay": 1.75
+                    },
+                    {
+                        "#comment": "Stage 3",
+                        "Types": [
+                            {
+                                "ZombieType": "zcorp"
+                            },
+                            {
+                                "ZombieType": "modern_balloon"
+                            },
+                            {
+                                "ZombieType": "modern_newspaper"
+                            },
+                            {
+                                "ZombieType": "tutorial"
+                            }
+                        ],
+                        "SpawnDelay": 1.5
+                    },
+                    {
+                        "#comment": "Stage 4",
+                        "Types": [
+                            {
+                                "ZombieType": "zcorp"
+                            },
+                            {
+                                "ZombieType": "roman_medusa"
+                            },
+                            {
+                                "ZombieType": "roman_healer"
+                            },
+                            {
+                                "ZombieType": "roman"
+                            }
+                        ],
+                        "SpawnDelay": 1.25
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

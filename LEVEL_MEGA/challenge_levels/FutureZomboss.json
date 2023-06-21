@@ -1,0 +1,123 @@
+{
+    "IgnoreForValidation": "true",
+    "objects": [
+        {
+            "objdata": {
+                "Name": "Boss Battle Redux PROTOTYPE",
+                "StageModule": "RTID(FutureStage@LevelModules)",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+					"RTID(FutureMowers@LevelModules)",
+                    "RTID(FutureLinkedTileGroups@CurrentLevel)",
+                    "RTID(ConveyorBelt@CurrentLevel)",
+                    "RTID(ZombossBattle@CurrentLevel)"
+                ],
+                "Description": "Boss Battle Redux PROTOTYPE!"
+            },
+            "objclass": "LevelDefinition"
+        },
+        {
+            "objdata": {
+                "InitialPlantList": [
+                    {
+                        "Weight": 25,
+                        "PlantType": "tool_powertile_alpha",
+						"MaxCount" : 4,
+						"MaxWeightFactor" : 0.0
+                    },
+                    {
+                        "Weight": 25,
+                        "PlantType": "tool_powertile_beta",
+						"MaxCount" : 4,
+						"MaxWeightFactor" : 0.0
+                    },
+                    {
+                        "Weight": 25,
+                        "PlantType": "tool_powertile_gamma",
+						"MaxCount" : 4,
+						"MaxWeightFactor" : 0.0
+                    },
+					{
+						"Weight": 15,
+						"PlantType": "holonut",
+						"MaxCount" : 5
+					},
+					{
+						"Weight": 20,
+						"PlantType": "laser_bean",
+						"MinCount" : 2
+					},
+					{
+						"Weight": 15,
+						"PlantType": "starfruit",
+						"MinCount" : 2
+					},
+					{
+						"Weight": 15,
+						"PlantType": "melonpult",
+						"MinCount" : 1
+					},
+					{
+						"Weight": 15,
+						"PlantType": "bonkchoy"
+					},
+					{
+						"Weight": 15,
+						"PlantType": "empea",
+						"MaxCount" : 4
+					}
+                ],
+                "DropDelayConditions": [
+                    {
+                        "MaxPackets": 0,
+                        "Delay": 7
+                    },
+                    {
+                        "MaxPackets": 5,
+                        "Delay": 10
+					},
+                    {
+                        "MaxPackets": 7,
+                        "Delay": 12.5
+                    },
+                    {
+                        "MaxPackets": 9,
+                        "Delay": 15
+                    }
+                ]
+            },
+            "objclass": "ConveyorSeedBankProperties",
+            "aliases": [ "ConveyorBelt" ],
+			"SpeedConditions": [
+                    {
+                        "MaxPackets": 0,
+                        "Speed": 100
+                    }
+                ]
+        },
+        {
+            "objdata": {
+                "LinkedTiles": []
+            },
+            "objclass": "PowerTileProperties",
+            "aliases": [
+                "FutureLinkedTileGroups"
+            ]
+        },
+        {
+        	"objclass" : "ZombossBattleModuleProperties",
+        	"aliases" : [ "ZombossBattle" ],
+        	"objdata": {
+        		"InitialZombossDelay"	: 1.0,
+				"BetweenZombossDelay"	: 2.0,
+				"ZombossGroupsToLoad"	: 2,
+				"ZombossSpawnGridPosition" : { "mX" : 7, "mY" : 3 },
+				"ReservedColumnCount"	: 1,
+				"ZombossMechType"		: "zombossmech_future"
+        	}
+        }
+    ],
+    "#comment": "Future Prototype",
+    "version": 1
+}

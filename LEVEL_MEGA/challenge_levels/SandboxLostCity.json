@@ -1,0 +1,91 @@
+{
+    "IgnoreForValidation": "true",
+    "#comment": "SandboxLostCity",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "Lost City Sandbox Level",
+                "LevelNumber": 42,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(LostCityMowers@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(GoldTiles@CurrentLevel)"
+                    
+                ],
+                "Name": "Lost City Sandbox",
+                "StageModule": "RTID(LostCityStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "GoldTiles"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 8,
+                        "GridY": 0,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 1,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 2,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 3,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 4,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 0,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 1,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 0,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 1,
+                        "TypeName": "goldtile"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PlantExcludeList": [],
+                "SelectionMethod": "chooser"
+            }
+        }
+    ],
+    "version": 1
+}

@@ -1,0 +1,252 @@
+{
+    "IgnoreForValidation": "true",
+    "#comment": "########################################################",
+    "objects": [
+        "RTID(ZombieDistance1@CurrentLevel)",
+        {
+            "aliases": [
+                "ZombieDistance1"
+            ],
+            "objclass": "StarChallengeZombieDistanceProps",
+            "objdata": {
+                "TargetDistance": 3
+            }
+        }
+    ],
+    "#comment2": "########################################################",
+    "objects2": [
+        "RTID(DefeatZombiesOfType1@CurrentLevel)",
+        {
+            "aliases": [
+                "DefeatZombiesOfType1"
+            ],
+            "objclass": "DefeatZombiesOfTypeChallengeProps",
+            "objdata": {
+                "Description": "[DEFEAT_X_CHICKENS]",
+                "TypesToKill": {
+                    "ListType": "includelist",
+                    "List": [
+                        "chicken",
+                        "chicken_battlez"
+                    ]
+                },
+                "NumZombiesToKill": 999
+            }
+        }
+    ],
+    "#comment3": "########################################################",
+    "objects3": [
+        "RTID(ReachTheScore1@CurrentLevel)",
+        {
+            "aliases": [
+                "ReachTheScore1"
+            ],
+            "objclass": "StarChallengeTargetScoreProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_SCORE_TO_BEAT]",
+                "DescriptionFailure": "[STARCHALLENGE_TARGET_SCORE_FAILURE]",
+                "DescriptiveName": "[STARCHALLENGE_TARGET_SCORE_NAME]",
+                "TargetScore": 350000
+            }
+        }
+    ],
+    "#comment4": "########################################################",
+    "objects4": [
+        "RTID(ApplyZombieConditions2@CurrentLevel)",
+        {
+            "aliases": [
+                "ApplyZombieConditions2"
+            ],
+            "objclass": "ApplyZombieConditionsChallengeProps",
+            "objdata": {
+                "ConditionToInflict": [
+                    "sapped",
+                    "butter",
+                    "tossed",
+                    "freeze",
+                    "chill",
+                    "stun",
+                    "blownoff",
+                    "hypnotized",
+                    "morphedtogargantuar",
+                    "sunbeaned",
+                    "haunted",
+                    "icecubed",
+                    "stalled",
+                    "dazeystunned",
+                    "solarflared",
+                    "iceblocked",
+                    "gummed",
+                    "stoneblocked",
+                    "petrified",
+                    "hotdateattraction",
+                    "shrunken",
+                    "poisoned",
+                    "decaypoison"
+                ],
+                "NumZombieConditionsToApply": 75
+            }
+        }
+    ],
+    "#comment5": "########################################################",
+    "objects5": [
+        "RTID(SimultaneousPlants2@CurrentLevel)",
+        {
+            "aliases": [
+                "SimultaneousPlants2"
+            ],
+            "objclass": "StarChallengeSimultaneousPlantsProps",
+            "objdata": {
+                "MaximumPlants": 15
+            }
+        }
+    ],
+    "#comment6": "########################################################",
+    "objects6": [
+        "RTID(KillZombies1@CurrentLevel)",
+        {
+            "aliases": [
+                "KillZombies1"
+            ],
+            "objclass": "StarChallengeKillZombiesInTimeProps",
+            "objdata": {
+                "Time": 30,
+                "ZombiesToKill": 75
+            }
+        }
+    ],
+    "#comment7": "########################################################",
+    "objects7": [
+        "RTID(PlantsLost2@CurrentLevel)",
+        {
+            "aliases": [
+                "PlantsLost2"
+            ],
+            "objclass": "StarChallengePlantsLostProps",
+            "objdata": {
+                "MaximumPlantsLost": 4
+            }
+        }
+    ],
+    "#comment8": "########################################################",
+    "objects8": [
+        "RTID(SunProduced2@CurrentLevel)",
+        {
+            "aliases": [
+                "SunProduced1"
+            ],
+            "objclass": "StarChallengeSunProducedProps",
+            "objdata": {
+                "TargetSun": 1000
+            }
+        }
+    ],
+    "#comment9": "########################################################",
+    "objects9": [
+        "RTID(ProtectThePlant@CurrentLevel)",
+        {
+            "aliases": [
+                "ProtectThePlant"
+            ],
+            "objclass": "ProtectThePlantChallengeProperties",
+            "objdata": {
+                "MustProtectCount": 2,
+                "Plants": [
+                    {
+                        "GridX": 3,
+                        "GridY": 0,
+                        "PlantType": "zoybeanpod"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 1,
+                        "PlantType": "zoybeanpod"
+                    }
+                ]
+            }
+        }
+    ],
+    "#comment10": "########################################################",
+    "objects10": [
+        "RTID(DefeatGeneralPhases2@CurrentLevel)",
+        {
+            "aliases": [
+                "DefeatGeneralPhases2"
+            ],
+            "objclass": "DefeatGeneralPhasesChallengeProps",
+            "objdata": {
+                "Description": "DEFEAT_CARDIO_X_TIMES",
+                "NumPhasesToKill": 1
+            }
+        }
+    ],
+    "#comment11": "########################################################",
+    "objects11": [
+        "RTID(DestroyGridItems2@CurrentLevel)",
+        {
+            "aliases": [
+                "DestroyGridItems2"
+            ],
+            "objclass": "DestroyGridItemsChallengeProps",
+            "objdata": {
+                "GridItemType": "gravestone_dark",
+                "GridItemsToDestroy": 50,
+                "ChallengeDescription": "[CHALLENGE_DESTROY_GRAVESTONES]"
+            }
+        }
+    ],
+    "#comment12": "########################################################",
+    "objects12": [
+        "RTID(ApplyZombieConditions1@CurrentLevel)",
+        {
+            "aliases": [
+                "ApplyZombieConditions1"
+            ],
+            "objclass": "ApplyZombieConditionsChallengeProps",
+            "objdata": {
+                "IncludeBurnedToAsh": true,
+                "NumZombieConditionsToApply": 1
+            }
+        }
+    ],
+    "#comment13": "########################################################",
+    "objects13": [
+        "RTID(ApplyZombieConditions1@CurrentLevel)",
+        {
+            "aliases": [
+                "ApplyZombieConditions1"
+            ],
+            "objclass": "ApplyZombieConditionsChallengeProps",
+            "objdata": {
+                "IncludeElectrified": true,
+                "NumZombieConditionsToApply": 1
+            }
+        }
+    ],
+    "#comment14": "########################################################",
+    "objects14": [
+        "RTID(SunUsed@CurrentLevel)",
+        {
+            "aliases": [
+                "SunUsed"
+            ],
+            "objclass": "StarChallengeSunUsedProps",
+            "objdata": {
+                "MaximumSun": 2250
+            }
+        }
+    ],
+    "#comment15": "########################################################",
+    "objects15": [
+        "RTID(PlantFullRowChallenge@CurrentLevel)",
+        {
+            "aliases": [
+                "PlantFullRowChallenge"
+            ],
+            "objclass": "PlantFullRowChallengeProps",
+            "objdata": {
+                "NumPlantsInRowNeeded": 9
+            }
+        }
+    ]
+}

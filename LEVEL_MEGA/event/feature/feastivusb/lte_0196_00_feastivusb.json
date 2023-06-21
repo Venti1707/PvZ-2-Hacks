@@ -1,0 +1,362 @@
+{
+    "#comment": "Level Of The Day Default",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "DraperPromo": "none",
+                "FirstOutroNarrative": "FEASTIVUS_LTE_2022_5",
+                "LevelNumber": 5,
+                "LevelPowerupSet": "LevelPowerupsDisabled",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(LevelEscalationModule@CurrentLevel)",
+                    "RTID(FastSunDropper@LevelModules)",
+                    "RTID(IceageMowers@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(Gravestones@CurrentLevel)",
+                    "RTID(FrozenPlantPlacement@CurrentLevel)"
+                ],
+                "Name": "[LTE_LEVEL_NAME_FEASTIVUS]",
+                "StageModule": "RTID(FeastivusStage@LevelModules)",
+                "StartingSun": 125
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PlantExcludeList": [],
+                "PresetPlantList": [
+                    {
+                        "Level": -1,
+                        "PlantType": "coldsnapdragon"
+                    }
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "FrozenPlantPlacement"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "GridX": 4,
+                        "GridY": 2,
+                        "Level": -1,
+                        "TypeName": "coldsnapdragon"
+                    }
+                ]
+            }
+        },        
+        {
+            "aliases": [
+                "LevelEscalationModule"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "FlagCount": 3,
+                "PlantfoodToSpawnCount": 2,
+                "PointIncrementPerWave": 50,
+                "StartingPoints": 0,
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "WavesPerFlag": 3,
+                "ZombiePool": [
+                    "RTID(feastivus@ZombieTypes)",
+                    "RTID(feastivus_armor1@ZombieTypes)",
+                    "RTID(feastivus_armor2@ZombieTypes)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "MaxNextWaveHealthPercentage": 0.6,
+                "MinNextWaveHealthPercentage": 0.4,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave1"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave2"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave3"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(feastivus_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave4"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(nutcracker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave5"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(feastivus_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave6"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(feastivus_camel_twohump@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_camel_twohump@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave7"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave8"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Gravestones"
+            ],
+            "objclass": "GravestoneProperties",
+            "objdata": {
+                "GravestoneCount": 4,
+                "SpawnColumnEnd": 9,
+                "SpawnColumnStart": 8
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": ["Wave9"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(nutcracker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(feastivus_camel_twohump@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(nutcracker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(feastivus_camel_twohump@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(feastivus_camel_twohump@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

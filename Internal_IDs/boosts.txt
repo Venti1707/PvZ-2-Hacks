@@ -1,0 +1,9 @@
+1 = Bounty Hunter
+2 = Extra Toughness
+3 = Fast Recharge
+4 = [First Strike]
+5 = Rapid Fire
+6 = Sun Discount
+7 = Shovel Bomb
+
+[] = only the First Strike boost is used in the game, the rest go unused.

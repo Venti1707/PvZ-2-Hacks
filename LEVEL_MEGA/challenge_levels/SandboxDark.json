@@ -1,0 +1,59 @@
+{
+    "IgnoreForValidation": "true",
+    "#comment": "SandboxDark",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "Dark Sandbox Level",
+                "LevelNumber": 42,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(DarkMowers@LevelModules)",
+                    "RTID(DarkSeedBank@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(Gravestones@CurrentLevel)"
+                ],
+                "Name": "Dark Sandbox",
+                "StageModule": "RTID(DarkStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "Gravestones"
+            ],
+            "objclass": "GravestoneProperties",
+            "objdata": {
+                "ForceSpawnData": [
+                    {
+                        "GridX": 4,
+                        "GridY": 0,
+                        "TypeName": "gravestone_dark"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 4,
+                        "TypeName": "gravestone_dark"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 4,
+                        "TypeName": "gravestoneSunOnDestruction"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "DarkSeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PlantExcludeList": [],
+                "SelectionMethod": "chooser"
+            }
+        }
+    ],
+    "version": 1
+}

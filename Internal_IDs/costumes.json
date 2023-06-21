@@ -1,0 +1,1858 @@
+{
+    "objclass": "CostumePropertySheet",
+    "aliases": [
+        "CostumeProps"
+    ],
+    "objdata": {
+        "CostumeList": [
+            {
+                "CostumeID": 1,
+                "PlantTypeName": "bloomerang",
+                "LayerName": "custom_02",
+                "FriendlyName": "Rasta"
+            },
+            {
+                "CostumeID": 2,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_01",
+                "FriendlyName": "Champ belt"
+            },
+            {
+                "CostumeID": 3,
+                "PlantTypeName": "cabbagepult",
+                "LayerName": "custom_01",
+                "FriendlyName": "Sweatband"
+            },
+            {
+                "CostumeID": 4,
+                "PlantTypeName": "cherry_bomb",
+                "LayerName": "custom_02",
+                "FriendlyName": "Shades and hats"
+            },
+            {
+                "CostumeID": 5,
+                "PlantTypeName": "coconutcannon",
+                "LayerName": "custom_01",
+                "FriendlyName": "Constructor's hat"
+            },
+            {
+                "CostumeID": 6,
+                "PlantTypeName": "gravebuster",
+                "LayerName": "custom_02",
+                "FriendlyName": "Fez"
+            },
+            {
+                "CostumeID": 7,
+                "PlantTypeName": "iceburg",
+                "LayerName": "custom_01",
+                "FriendlyName": "fuzzy ear protectors"
+            },
+            {
+                "CostumeID": 8,
+                "PlantTypeName": "jalapeno",
+                "LayerName": "custom_01",
+                "FriendlyName": "Ranger's hat"
+            },
+            {
+                "CostumeID": 9,
+                "PlantTypeName": "kernelpult",
+                "LayerName": "custom_02",
+                "FriendlyName": "Red bandana"
+            },
+            {
+                "CostumeID": 10,
+                "PlantTypeName": "lightningreed",
+                "LayerName": "custom_01",
+                "FriendlyName": "Lamp shade"
+            },
+            {
+                "CostumeID": 11,
+                "PlantTypeName": "melonpult",
+                "LayerName": "custom_02",
+                "FriendlyName": "Sailor's hat"
+            },
+            {
+                "CostumeID": 12,
+                "PlantTypeName": "peapod",
+                "LayerName": "custom_01",
+                "FriendlyName": "Fedoras"
+            },
+            {
+                "CostumeID": 13,
+                "PlantTypeName": "potatomine",
+                "LayerName": "custom_01",
+                "FriendlyName": "Mask"
+            },
+            {
+                "CostumeID": 14,
+                "PlantTypeName": "powerlily",
+                "LayerName": "custom_1",
+                "FriendlyName": "Glasses"
+            },
+            {
+                "CostumeID": 15,
+                "PlantTypeName": "repeater",
+                "LayerName": "custom_01",
+                "FriendlyName": "Viking helmet"
+            },
+            {
+                "CostumeID": 16,
+                "PlantTypeName": "snowpea",
+                "LayerName": "custom_02",
+                "FriendlyName": "Pink winter hat"
+            },
+            {
+                "CostumeID": 17,
+                "PlantTypeName": "snapdragon",
+                "LayerName": "custom_02",
+                "FriendlyName": "Fireman's helmet"
+            },
+            {
+                "CostumeID": 18,
+                "PlantTypeName": "spikerock",
+                "LayerName": "custom_01",
+                "FriendlyName": "Shades"
+            },
+            {
+                "CostumeID": 19,
+                "PlantTypeName": "spikeweed",
+                "LayerName": "custom_01",
+                "FriendlyName": "Disguise glasses"
+            },
+            {
+                "CostumeID": 20,
+                "PlantTypeName": "splitpea",
+                "LayerName": "custom_01",
+                "FriendlyName": "Angel & devil"
+            },
+            {
+                "CostumeID": 21,
+                "PlantTypeName": "springbean",
+                "LayerName": "custom_01",
+                "FriendlyName": "Hawaiian dress"
+            },
+            {
+                "CostumeID": 22,
+                "PlantTypeName": "squash",
+                "LayerName": "custom_01",
+                "FriendlyName": "Camo bandana"
+            },
+            {
+                "CostumeID": 23,
+                "PlantTypeName": "twinsunflower",
+                "LayerName": "custom_02",
+                "FriendlyName": "Blue shades"
+            },
+            {
+                "CostumeID": 24,
+                "PlantTypeName": "tallnut",
+                "LayerName": "custom_01",
+                "FriendlyName": "Black moustache"
+            },
+            {
+                "CostumeID": 25,
+                "PlantTypeName": "threepeater",
+                "LayerName": "custom_02",
+                "FriendlyName": "Pots"
+            },
+            {
+                "CostumeID": 26,
+                "PlantTypeName": "torchwood",
+                "LayerName": "custom_01",
+                "FriendlyName": "Goggles"
+            },
+            {
+                "CostumeID": 27,
+                "PlantTypeName": "wintermelon",
+                "LayerName": "custom_02",
+                "FriendlyName": "Blue winter hat"
+            },
+            {
+                "CostumeID": 28,
+                "PlantTypeName": "chilibean",
+                "LayerName": "custom_02",
+                "FriendlyName": "Diaper"
+            },
+            {
+                "CostumeID": 29,
+                "PlantTypeName": "citron",
+                "LayerName": "custom_03",
+                "FriendlyName": "Blender"
+            },
+            {
+                "CostumeID": 30,
+                "PlantTypeName": "laser_bean",
+                "LayerName": "custom_02",
+                "FriendlyName": "Cape"
+            },
+            {
+                "CostumeID": 31,
+                "PlantTypeName": "magnifyinggrass",
+                "LayerName": "custom_02",
+                "FriendlyName": "Turban"
+            },
+            {
+                "CostumeID": 32,
+                "PlantTypeName": "holonut",
+                "LayerName": "custom_02",
+                "FriendlyName": "Ghost Trap"
+            },
+            {
+                "CostumeID": 33,
+                "PlantTypeName": "empea",
+                "LayerName": "custom_02",
+                "FriendlyName": "Helmet"
+            },
+            {
+                "CostumeID": 34,
+                "PlantTypeName": "blover",
+                "LayerName": "custom_02",
+                "FriendlyName": "Glasses"
+            },
+            {
+                "CostumeID": 35,
+                "PlantTypeName": "starfruit",
+                "LayerName": "custom_01",
+                "FriendlyName": "Afro"
+            },
+            {
+                "CostumeID": 36,
+                "PlantTypeName": "powerplant",
+                "LayerName": "custom_02",
+                "FriendlyName": "BjornHorn"
+            },
+            {
+                "CostumeID": 37,
+                "PlantTypeName": "sunshroom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Hockey Mask"
+            },
+            {
+                "CostumeID": 38,
+                "PlantTypeName": "puffshroom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Bull Horns"
+            },
+            {
+                "CostumeID": 39,
+                "PlantTypeName": "hypnoshroom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Round Glasses"
+            },
+            {
+                "CostumeID": 40,
+                "PlantTypeName": "fumeshroom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Thick Glasses"
+            },
+            {
+                "CostumeID": 41,
+                "PlantTypeName": "sunbean",
+                "LayerName": "custom_01",
+                "FriendlyName": "Liberty Crown"
+            },
+            {
+                "CostumeID": 42,
+                "PlantTypeName": "magnetshroom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Purple Cape"
+            },
+            {
+                "CostumeID": 43,
+                "PlantTypeName": "peanut",
+                "LayerName": "custom_02",
+                "FriendlyName": "Inner Tube"
+            },
+            {
+                "CostumeID": 44,
+                "PlantTypeName": "chomper",
+                "LayerName": "custom_01",
+                "FriendlyName": "Visor"
+            },
+            {
+                "CostumeID": 45,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_05",
+                "FriendlyName": "Halloween Mummy Wrap"
+            },
+            {
+                "CostumeID": 46,
+                "PlantTypeName": "kernelpult",
+                "LayerName": "custom_04",
+                "FriendlyName": "Halloween Clown"
+            },
+            {
+                "CostumeID": 47,
+                "PlantTypeName": "repeater",
+                "LayerName": "custom_03",
+                "FriendlyName": "Halloween Vampire"
+            },
+            {
+                "CostumeID": 48,
+                "PlantTypeName": "potatomine",
+                "LayerName": "custom_02",
+                "FriendlyName": "Googly Glasses"
+            },
+            {
+                "CostumeID": 49,
+                "PlantTypeName": "potatomine",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top hat & monocle"
+            },
+            {
+                "CostumeID": 50,
+                "PlantTypeName": "bloomerang",
+                "LayerName": "custom_01",
+                "FriendlyName": "Elf Hat"
+            },
+            {
+                "CostumeID": 51,
+                "PlantTypeName": "bloomerang",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 52,
+                "PlantTypeName": "cabbagepult",
+                "LayerName": "custom_02",
+                "FriendlyName": "tiara"
+            },
+            {
+                "CostumeID": 53,
+                "PlantTypeName": "cabbagepult",
+                "LayerName": "custom_03",
+                "FriendlyName": "top hat & monocle"
+            },
+            {
+                "CostumeID": 54,
+                "PlantTypeName": "iceburg",
+                "LayerName": "custom_02",
+                "FriendlyName": "plaid ear protectors"
+            },
+            {
+                "CostumeID": 55,
+                "PlantTypeName": "iceburg",
+                "LayerName": "custom_03",
+                "FriendlyName": "peashooter ear protectors"
+            },
+            {
+                "CostumeID": 56,
+                "PlantTypeName": "iceburg",
+                "LayerName": "custom_04",
+                "FriendlyName": "top hat & monocle"
+            },
+            {
+                "CostumeID": 57,
+                "PlantTypeName": "gravebuster",
+                "LayerName": "custom_01",
+                "FriendlyName": "Sombrero"
+            },
+            {
+                "CostumeID": 58,
+                "PlantTypeName": "gravebuster",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 59,
+                "PlantTypeName": "twinsunflower",
+                "LayerName": "custom_01",
+                "FriendlyName": "raver shades"
+            },
+            {
+                "CostumeID": 60,
+                "PlantTypeName": "twinsunflower",
+                "LayerName": "custom_03",
+                "FriendlyName": "red sunglasses"
+            },
+            {
+                "CostumeID": 61,
+                "PlantTypeName": "twinsunflower",
+                "LayerName": "custom_04",
+                "FriendlyName": "top hat"
+            },
+            {
+                "CostumeID": 62,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_05",
+                "FriendlyName": "Mummy Wraps"
+            },
+            {
+                "CostumeID": 63,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_02",
+                "FriendlyName": "Wrestling Belt"
+            },
+            {
+                "CostumeID": 64,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_03",
+                "FriendlyName": "Karate Belt"
+            },
+            {
+                "CostumeID": 65,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_04",
+                "FriendlyName": "Bow Tie"
+            },
+            {
+                "CostumeID": 66,
+                "PlantTypeName": "repeater",
+                "LayerName": "custom_02",
+                "FriendlyName": "Raccoon Hat"
+            },
+            {
+                "CostumeID": 67,
+                "PlantTypeName": "repeater",
+                "LayerName": "custom_04",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 68,
+                "PlantTypeName": "snowpea",
+                "LayerName": "custom_01",
+                "FriendlyName": "Winter Cap"
+            },
+            {
+                "CostumeID": 69,
+                "PlantTypeName": "snowpea",
+                "LayerName": "custom_03",
+                "FriendlyName": "Trapper Hat"
+            },
+            {
+                "CostumeID": 70,
+                "PlantTypeName": "snowpea",
+                "LayerName": "custom_04",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 71,
+                "PlantTypeName": "kernelpult",
+                "LayerName": "custom_01",
+                "FriendlyName": "japanese bandana"
+            },
+            {
+                "CostumeID": 72,
+                "PlantTypeName": "kernelpult",
+                "LayerName": "custom_03",
+                "FriendlyName": "top hat & collars"
+            },
+            {
+                "CostumeID": 73,
+                "PlantTypeName": "snapdragon",
+                "LayerName": "custom_01",
+                "FriendlyName": "Viking helm"
+            },
+            {
+                "CostumeID": 74,
+                "PlantTypeName": "snapdragon",
+                "LayerName": "custom_03",
+                "FriendlyName": "Lincoln's hat"
+            },
+            {
+                "CostumeID": 75,
+                "PlantTypeName": "powerlily",
+                "LayerName": "custom_2",
+                "FriendlyName": "Reading Glasses"
+            },
+            {
+                "CostumeID": 76,
+                "PlantTypeName": "powerlily",
+                "LayerName": "custom_3",
+                "FriendlyName": "Monocle"
+            },
+            {
+                "CostumeID": 77,
+                "PlantTypeName": "spikeweed",
+                "LayerName": "custom_02",
+                "FriendlyName": "3D Glasses"
+            },
+            {
+                "CostumeID": 78,
+                "PlantTypeName": "spikeweed",
+                "LayerName": "custom_03",
+                "FriendlyName": "Hypno Glasses"
+            },
+            {
+                "CostumeID": 79,
+                "PlantTypeName": "spikeweed",
+                "LayerName": "custom_04",
+                "FriendlyName": "Monocle"
+            },
+            {
+                "CostumeID": 80,
+                "PlantTypeName": "coconutcannon",
+                "LayerName": "custom_02",
+                "FriendlyName": "Pith Helmet"
+            },
+            {
+                "CostumeID": 81,
+                "PlantTypeName": "coconutcannon",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 82,
+                "PlantTypeName": "cherry_bomb",
+                "LayerName": "custom_01",
+                "FriendlyName": "pink hats"
+            },
+            {
+                "CostumeID": 83,
+                "PlantTypeName": "cherry_bomb",
+                "LayerName": "custom_03",
+                "FriendlyName": "top hats and monocles"
+            },
+            {
+                "CostumeID": 84,
+                "PlantTypeName": "springbean",
+                "LayerName": "custom_02",
+                "FriendlyName": "Pink Tutu"
+            },
+            {
+                "CostumeID": 85,
+                "PlantTypeName": "springbean",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 86,
+                "PlantTypeName": "spikerock",
+                "LayerName": "custom_02",
+                "FriendlyName": "Funky Glasses"
+            },
+            {
+                "CostumeID": 87,
+                "PlantTypeName": "spikerock",
+                "LayerName": "custom_03",
+                "FriendlyName": "Monocle"
+            },
+            {
+                "CostumeID": 88,
+                "PlantTypeName": "threepeater",
+                "LayerName": "custom_01",
+                "FriendlyName": "Party Hats"
+            },
+            {
+                "CostumeID": 89,
+                "PlantTypeName": "threepeater",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hats"
+            },
+            {
+                "CostumeID": 90,
+                "PlantTypeName": "squash",
+                "LayerName": "custom_02",
+                "FriendlyName": "Pink Headband"
+            },
+            {
+                "CostumeID": 91,
+                "PlantTypeName": "squash",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 92,
+                "PlantTypeName": "splitpea",
+                "LayerName": "custom_02",
+                "FriendlyName": "cop & robber hats"
+            },
+            {
+                "CostumeID": 93,
+                "PlantTypeName": "splitpea",
+                "LayerName": "custom_03",
+                "FriendlyName": "orange & blue top hats"
+            },
+            {
+                "CostumeID": 94,
+                "PlantTypeName": "chilibean",
+                "LayerName": "custom_01",
+                "FriendlyName": "bib"
+            },
+            {
+                "CostumeID": 95,
+                "PlantTypeName": "chilibean",
+                "LayerName": "custom_03",
+                "FriendlyName": "bowtie"
+            },
+            {
+                "CostumeID": 96,
+                "PlantTypeName": "torchwood",
+                "LayerName": "custom_02",
+                "FriendlyName": "Star Glasses"
+            },
+            {
+                "CostumeID": 97,
+                "PlantTypeName": "torchwood",
+                "LayerName": "custom_03",
+                "FriendlyName": "Monocle"
+            },
+            {
+                "CostumeID": 99,
+                "PlantTypeName": "lightningreed",
+                "LayerName": "custom_02",
+                "FriendlyName": "bunny ears"
+            },
+            {
+                "CostumeID": 100,
+                "PlantTypeName": "lightningreed",
+                "LayerName": "custom_03",
+                "FriendlyName": "top hat"
+            },
+            {
+                "CostumeID": 101,
+                "PlantTypeName": "tallnut",
+                "LayerName": "custom_02",
+                "FriendlyName": "biker stache"
+            },
+            {
+                "CostumeID": 102,
+                "PlantTypeName": "tallnut",
+                "LayerName": "custom_03",
+                "FriendlyName": "DRP Beard"
+            },
+            {
+                "CostumeID": 103,
+                "PlantTypeName": "tallnut",
+                "LayerName": "custom_04",
+                "FriendlyName": "thin mustache & bowtie"
+            },
+            {
+                "CostumeID": 104,
+                "PlantTypeName": "melonpult",
+                "LayerName": "custom_01",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 105,
+                "PlantTypeName": "melonpult",
+                "LayerName": "custom_03",
+                "FriendlyName": "Baseball Hat"
+            },
+            {
+                "CostumeID": 106,
+                "PlantTypeName": "wintermelon",
+                "LayerName": "custom_01",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 107,
+                "PlantTypeName": "wintermelon",
+                "LayerName": "custom_03",
+                "FriendlyName": "Winter Hat"
+            },
+            {
+                "CostumeID": 108,
+                "PlantTypeName": "laser_bean",
+                "LayerName": "custom_01",
+                "FriendlyName": "Gold Necklace"
+            },
+            {
+                "CostumeID": 109,
+                "PlantTypeName": "laser_bean",
+                "LayerName": "custom_03",
+                "FriendlyName": "Tux and Hat"
+            },
+            {
+                "CostumeID": 110,
+                "PlantTypeName": "blover",
+                "LayerName": "custom_01",
+                "FriendlyName": "Glasses"
+            },
+            {
+                "CostumeID": 111,
+                "PlantTypeName": "blover",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 112,
+                "PlantTypeName": "citron",
+                "LayerName": "custom_01",
+                "FriendlyName": "Propeller Beanie"
+            },
+            {
+                "CostumeID": 113,
+                "PlantTypeName": "citron",
+                "LayerName": "custom_02",
+                "FriendlyName": "Juice Carton"
+            },
+            {
+                "CostumeID": 114,
+                "PlantTypeName": "empea",
+                "LayerName": "custom_01",
+                "FriendlyName": "Frankenstein"
+            },
+            {
+                "CostumeID": 115,
+                "PlantTypeName": "empea",
+                "LayerName": "custom_03",
+                "FriendlyName": "Bowtie"
+            },
+            {
+                "CostumeID": 116,
+                "PlantTypeName": "starfruit",
+                "LayerName": "custom_02",
+                "FriendlyName": "Antennae"
+            },
+            {
+                "CostumeID": 117,
+                "PlantTypeName": "holonut",
+                "LayerName": "custom_01",
+                "FriendlyName": "Toaster"
+            },
+            {
+                "CostumeID": 118,
+                "PlantTypeName": "holonut",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 119,
+                "PlantTypeName": "magnifyinggrass",
+                "LayerName": "custom_01",
+                "FriendlyName": "Bow"
+            },
+            {
+                "CostumeID": 120,
+                "PlantTypeName": "magnifyinggrass",
+                "LayerName": "custom_03",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 121,
+                "PlantTypeName": "powerplant",
+                "LayerName": "custom_01",
+                "FriendlyName": "Russian Hat"
+            },
+            {
+                "CostumeID": 122,
+                "PlantTypeName": "powerplant",
+                "LayerName": "custom_03",
+                "FriendlyName": "Disguise Glasses"
+            },
+            {
+                "CostumeID": 123,
+                "PlantTypeName": "powerplant",
+                "LayerName": "custom_04",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 124,
+                "PlantTypeName": "tanglekelp",
+                "LayerName": "custom_01",
+                "FriendlyName": "Bandanna"
+            },
+            {
+                "CostumeID": 125,
+                "PlantTypeName": "bowlingbulb",
+                "LayerName": "custom_1",
+                "FriendlyName": "Top Hats"
+            },
+            {
+                "CostumeID": 126,
+                "PlantTypeName": "homingthistle",
+                "LayerName": "custom_01",
+                "FriendlyName": "Duckie"
+            },
+            {
+                "CostumeID": 127,
+                "PlantTypeName": "guacodile",
+                "LayerName": "custom_01",
+                "FriendlyName": "Guac and Chips"
+            },
+            {
+                "CostumeID": 128,
+                "PlantTypeName": "ghostpepper",
+                "LayerName": "custom_01",
+                "FriendlyName": "Purple Bow"
+            },
+            {
+                "CostumeID": 129,
+                "PlantTypeName": "lilypad",
+                "LayerName": "custom_01",
+                "FriendlyName": "Pink Flower"
+            },
+            {
+                "CostumeID": 130,
+                "PlantTypeName": "sweetpotato",
+                "LayerName": "custom_01",
+                "FriendlyName": "bowtie"
+            },
+            {
+                "CostumeID": 131,
+                "PlantTypeName": "sapfling",
+                "LayerName": "custom_01",
+                "FriendlyName": "ornament"
+            },
+            {
+                "CostumeID": 132,
+                "PlantTypeName": "banana",
+                "LayerName": "custom_01",
+                "FriendlyName": "towel"
+            },
+            {
+                "CostumeID": 133,
+                "PlantTypeName": "chardguard",
+                "LayerName": "custom_01",
+                "FriendlyName": "vest"
+            },
+            {
+                "CostumeID": 134,
+                "PlantTypeName": "chardguard",
+                "LayerName": "custom_02",
+                "FriendlyName": "spikybelt"
+            },
+            {
+                "CostumeID": 135,
+                "PlantTypeName": "hurrikale",
+                "LayerName": "custom_01",
+                "FriendlyName": "foxtail"
+            },
+            {
+                "CostumeID": 136,
+                "PlantTypeName": "hotpotato",
+                "LayerName": "custom_01",
+                "FriendlyName": "cheese"
+            },
+            {
+                "CostumeID": 137,
+                "PlantTypeName": "pepperpult",
+                "LayerName": "custom_01",
+                "FriendlyName": "headband"
+            },
+            {
+                "CostumeID": 138,
+                "PlantTypeName": "pepperpult",
+                "LayerName": "custom_valentines",
+                "FriendlyName": "heart_headband"
+            },
+            {
+                "CostumeID": 139,
+                "PlantTypeName": "firepeashooter",
+                "LayerName": "custom_01",
+                "FriendlyName": "hotdog"
+            },
+            {
+                "CostumeID": 140,
+                "PlantTypeName": "tallnut",
+                "LayerName": "custom_03",
+                "FriendlyName": "DRP Beard"
+            },
+            {
+                "CostumeID": 141,
+                "PlantTypeName": "tallnut",
+                "LayerName": "custom_02",
+                "FriendlyName": "Biker 'stache"
+            },
+            {
+                "CostumeID": 142,
+                "PlantTypeName": "xshot",
+                "LayerName": "custom_02",
+                "FriendlyName": "Night Vision"
+            },
+            {
+                "CostumeID": 143,
+                "PlantTypeName": "xshot",
+                "LayerName": "custom_01",
+                "FriendlyName": "Tiara"
+            },
+            {
+                "CostumeID": 144,
+                "PlantTypeName": "stunion",
+                "LayerName": "custom_02",
+                "FriendlyName": "Radio"
+            },
+            {
+                "CostumeID": 145,
+                "PlantTypeName": "stunion",
+                "LayerName": "custom_01",
+                "FriendlyName": "Straw Hat"
+            },
+            {
+                "CostumeID": 146,
+                "PlantTypeName": "kernelpult",
+                "LayerName": "custom_05",
+                "FriendlyName": "Spring Bow"
+            },
+            {
+                "CostumeID": 147,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_06",
+                "FriendlyName": "Flower Garland"
+            },
+            {
+                "CostumeID": 148,
+                "PlantTypeName": "twinsunflower",
+                "LayerName": "custom_05",
+                "FriendlyName": "Bonnets"
+            },
+            {
+                "CostumeID": 149,
+                "PlantTypeName": "snapdragon",
+                "LayerName": "custom_04",
+                "FriendlyName": "Bunny Ears"
+            },
+            {
+                "CostumeID": 150,
+                "PlantTypeName": "dandelion",
+                "LayerName": "custom_01",
+                "FriendlyName": "Beardy Beard"
+            },
+            {
+                "CostumeID": 151,
+                "PlantTypeName": "dandelion",
+                "LayerName": "custom_02",
+                "FriendlyName": "Elfin Ears"
+            },
+            {
+                "CostumeID": 152,
+                "PlantTypeName": "kernelpult",
+                "LayerName": "custom_06",
+                "FriendlyName": "Birthday Noisemaker"
+            },
+            {
+                "CostumeID": 153,
+                "PlantTypeName": "snapdragon",
+                "LayerName": "custom_05",
+                "FriendlyName": "Birthday Cupcake"
+            },
+            {
+                "CostumeID": 154,
+                "PlantTypeName": "lightningreed",
+                "LayerName": "custom_04",
+                "FriendlyName": "Birthday Hat"
+            },
+            {
+                "CostumeID": 155,
+                "PlantTypeName": "cabbagepult",
+                "LayerName": "custom_04",
+                "FriendlyName": "Birthday Hat"
+            },
+            {
+                "CostumeID": 156,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_07",
+                "FriendlyName": "Birthday Hat"
+            },
+            {
+                "CostumeID": 157,
+                "PlantTypeName": "lavaguava",
+                "LayerName": "custom_01",
+                "FriendlyName": "Lei"
+            },
+            {
+                "CostumeID": 158,
+                "PlantTypeName": "lavaguava",
+                "LayerName": "custom_02",
+                "FriendlyName": "Headband"
+            },
+            {
+                "CostumeID": 159,
+                "PlantTypeName": "toadstool",
+                "LayerName": "custom_01",
+                "FriendlyName": "Afro"
+            },
+            {
+                "CostumeID": 160,
+                "PlantTypeName": "toadstool",
+                "LayerName": "custom_02",
+                "FriendlyName": "Purple Hat"
+            },
+            {
+                "CostumeID": 161,
+                "PlantTypeName": "akee",
+                "LayerName": "custom_01",
+                "FriendlyName": "Helmet"
+            },
+            {
+                "CostumeID": 162,
+                "PlantTypeName": "akee",
+                "LayerName": "custom_02",
+                "FriendlyName": "Bandana"
+            },
+            {
+                "CostumeID": 163,
+                "PlantTypeName": "endurian",
+                "LayerName": "custom_01",
+                "FriendlyName": "Mawashi"
+            },
+            {
+                "CostumeID": 164,
+                "PlantTypeName": "endurian",
+                "LayerName": "custom_02",
+                "FriendlyName": "Football Pads"
+            },
+            {
+                "CostumeID": 165,
+                "PlantTypeName": "redstinger",
+                "LayerName": "custom_01",
+                "FriendlyName": "Robin Hood"
+            },
+            {
+                "CostumeID": 166,
+                "PlantTypeName": "redstinger",
+                "LayerName": "custom_02",
+                "FriendlyName": "Boonie Hat"
+            },
+            {
+                "CostumeID": 167,
+                "PlantTypeName": "goldleaf",
+                "LayerName": "custom_01",
+                "FriendlyName": "Sundae Topping"
+            },
+            {
+                "CostumeID": 168,
+                "PlantTypeName": "goldleaf",
+                "LayerName": "custom_02",
+                "FriendlyName": "Golden Locks"
+            },
+            {
+                "CostumeID": 169,
+                "PlantTypeName": "goldleaf",
+                "LayerName": "custom_03",
+                "FriendlyName": "Hairstyle 9001"
+            },
+            {
+                "CostumeID": 170,
+                "PlantTypeName": "stallia",
+                "LayerName": "custom_01",
+                "FriendlyName": "Nighty Night Cap"
+            },
+            {
+                "CostumeID": 171,
+                "PlantTypeName": "stallia",
+                "LayerName": "custom_02",
+                "FriendlyName": "Lion Costume"
+            },
+            {
+                "CostumeID": 172,
+                "PlantTypeName": "lightningreed",
+                "LayerName": "custom_05",
+                "FriendlyName": "Bug Zapper"
+            },
+            {
+                "CostumeID": 173,
+                "PlantTypeName": "pepperpult",
+                "LayerName": "custom_02",
+                "FriendlyName": "Soda Hat"
+            },
+            {
+                "CostumeID": 174,
+                "PlantTypeName": "tallnut",
+                "LayerName": "custom_05",
+                "FriendlyName": "Swimsuit"
+            },
+            {
+                "CostumeID": 175,
+                "PlantTypeName": "wintermelon",
+                "LayerName": "custom_04",
+                "FriendlyName": "Personal Fan"
+            },
+            {
+                "CostumeID": 176,
+                "PlantTypeName": "repeater",
+                "LayerName": "custom_05",
+                "FriendlyName": "Sun Hat"
+            },
+            {
+                "CostumeID": 177,
+                "PlantTypeName": "cactus",
+                "LayerName": "custom_01",
+                "FriendlyName": "Workout Sweats"
+            },
+            {
+                "CostumeID": 178,
+                "PlantTypeName": "cactus",
+                "LayerName": "custom_02",
+                "FriendlyName": "Denim Vest"
+            },
+            {
+                "CostumeID": 179,
+                "PlantTypeName": "strawburst",
+                "LayerName": "custom_01",
+                "FriendlyName": "mohawk"
+            },
+            {
+                "CostumeID": 180,
+                "PlantTypeName": "strawburst",
+                "LayerName": "custom_02",
+                "FriendlyName": "fedora"
+            },
+            {
+                "CostumeID": 181,
+                "PlantTypeName": "thymewarp",
+                "LayerName": "custom_01",
+                "FriendlyName": "Golden Top Hat"
+            },
+            {
+                "CostumeID": 182,
+                "PlantTypeName": "thymewarp",
+                "LayerName": "custom_02",
+                "FriendlyName": "Tubular Cap"
+            },
+            {
+                "CostumeID": 183,
+                "PlantTypeName": "electricblueberry",
+                "LayerName": "custom_01",
+                "FriendlyName": "Light Bulb"
+            },
+            {
+                "CostumeID": 184,
+                "PlantTypeName": "electricblueberry",
+                "LayerName": "custom_02",
+                "FriendlyName": "Outlet"
+            },
+            {
+                "CostumeID": 185,
+                "PlantTypeName": "phatbeet",
+                "LayerName": "custom_01",
+                "FriendlyName": "Run P.V.Z."
+            },
+            {
+                "CostumeID": 186,
+                "PlantTypeName": "phatbeet",
+                "LayerName": "custom_02",
+                "FriendlyName": "Radio Construction Helmet"
+            },
+            {
+                "CostumeID": 187,
+                "PlantTypeName": "celerystalker",
+                "LayerName": "custom_01",
+                "FriendlyName": "Helm of Plantity +1."
+            },
+            {
+                "CostumeID": 188,
+                "PlantTypeName": "celerystalker",
+                "LayerName": "custom_02",
+                "FriendlyName": "Boxing Helmet"
+            },
+            {
+                "CostumeID": 189,
+                "PlantTypeName": "garlic",
+                "LayerName": "custom_01",
+                "FriendlyName": "Crop Farmer Hat"
+            },
+            {
+                "CostumeID": 190,
+                "PlantTypeName": "garlic",
+                "LayerName": "custom_02",
+                "FriendlyName": "Rubber Glove"
+            },
+            {
+                "CostumeID": 191,
+                "PlantTypeName": "sporeshroom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Paper Bag"
+            },
+            {
+                "CostumeID": 192,
+                "PlantTypeName": "sporeshroom",
+                "LayerName": "custom_02",
+                "FriendlyName": "Origami Hat"
+            },
+            {
+                "CostumeID": 193,
+                "PlantTypeName": "intensivecarrot",
+                "LayerName": "custom_01",
+                "FriendlyName": "Black Rimmed Glasses"
+            },
+            {
+                "CostumeID": 194,
+                "PlantTypeName": "intensivecarrot",
+                "LayerName": "custom_02",
+                "FriendlyName": "Doc Head Mirror"
+            },
+            {
+                "CostumeID": 195,
+                "PlantTypeName": "jackolantern",
+                "LayerName": "custom_01",
+                "FriendlyName": "Count Jackula"
+            },
+            {
+                "CostumeID": 196,
+                "PlantTypeName": "jackolantern",
+                "LayerName": "custom_02",
+                "FriendlyName": "Fire Extinguisher"
+            },
+            {
+                "CostumeID": 197,
+                "PlantTypeName": "grapeshot",
+                "LayerName": "custom_01",
+                "FriendlyName": "Umbrella"
+            },
+            {
+                "CostumeID": 198,
+                "PlantTypeName": "grapeshot",
+                "LayerName": "custom_02",
+                "FriendlyName": "Balloons"
+            },
+            {
+                "CostumeID": 199,
+                "PlantTypeName": "primalpeashooter",
+                "LayerName": "custom_01",
+                "FriendlyName": "Hunter's Hat"
+            },
+            {
+                "CostumeID": 200,
+                "PlantTypeName": "primalpeashooter",
+                "LayerName": "custom_02",
+                "FriendlyName": "Shower Cap"
+            },
+            {
+                "CostumeID": 201,
+                "PlantTypeName": "primalwallnut",
+                "LayerName": "custom_01",
+                "FriendlyName": "Overalls"
+            },
+            {
+                "CostumeID": 202,
+                "PlantTypeName": "primalwallnut",
+                "LayerName": "custom_02",
+                "FriendlyName": "Speed Swimmer"
+            },
+            {
+                "CostumeID": 203,
+                "PlantTypeName": "perfumeshroom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Cupid's Arrow"
+            },
+            {
+                "CostumeID": 204,
+                "PlantTypeName": "perfumeshroom",
+                "LayerName": "custom_02",
+                "FriendlyName": "Cool Guy Cap"
+            },
+            {
+                "CostumeID": 205,
+                "PlantTypeName": "coldsnapdragon",
+                "LayerName": "custom_01",
+                "FriendlyName": "Ice Cube"
+            },
+            {
+                "CostumeID": 206,
+                "PlantTypeName": "coldsnapdragon",
+                "LayerName": "custom_02",
+                "FriendlyName": "Ice Cream Cone"
+            },
+            {
+                "CostumeID": 207,
+                "PlantTypeName": "primalpotatomine",
+                "LayerName": "custom_01",
+                "FriendlyName": "Smart Specs"
+            },
+            {
+                "CostumeID": 208,
+                "PlantTypeName": "primalpotatomine",
+                "LayerName": "custom_02",
+                "FriendlyName": "Police Tape"
+            },
+            {
+                "CostumeID": 209,
+                "PlantTypeName": "primalsunflower",
+                "LayerName": "custom_01",
+                "FriendlyName": "Dino Hat"
+            },
+            {
+                "CostumeID": 210,
+                "PlantTypeName": "primalsunflower",
+                "LayerName": "custom_02",
+                "FriendlyName": "Antlers"
+            },
+            {
+                "CostumeID": 211,
+                "PlantTypeName": "shrinkingviolet",
+                "LayerName": "custom_01",
+                "FriendlyName": "Ruby Glitter Shoes"
+            },
+            {
+                "CostumeID": 212,
+                "PlantTypeName": "shrinkingviolet",
+                "LayerName": "custom_02",
+                "FriendlyName": "Snazzy Janes"
+            },
+            {
+                "CostumeID": 213,
+                "PlantTypeName": "bloominghearts",
+                "LayerName": "custom_01",
+                "FriendlyName": "Headband - Flower"
+            },
+            {
+                "CostumeID": 214,
+                "PlantTypeName": "bloominghearts",
+                "LayerName": "custom_02",
+                "FriendlyName": "Headband - Bow"
+            },
+            {
+                "CostumeID": 215,
+                "PlantTypeName": "moonflower",
+                "LayerName": "custom_01",
+                "FriendlyName": "Magic Moon Wand"
+            },
+            {
+                "CostumeID": 216,
+                "PlantTypeName": "nightshade",
+                "LayerName": "custom_01",
+                "FriendlyName": "Shades"
+            },
+            {
+                "CostumeID": 217,
+                "PlantTypeName": "shadowshroom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Kitty Hat"
+            },
+            {
+                "CostumeID": 218,
+                "PlantTypeName": "escaperoot",
+                "LayerName": "custom_01",
+                "FriendlyName": "Mining Helmet"
+            },
+            {
+                "CostumeID": 219,
+                "PlantTypeName": "escaperoot",
+                "LayerName": "custom_02",
+                "FriendlyName": "Sheriff's Hat"
+            },
+            {
+                "CostumeID": 220,
+                "PlantTypeName": "dusklobber",
+                "LayerName": "custom_01",
+                "FriendlyName": "Glam Hair"
+            },
+            {
+                "CostumeID": 221,
+                "PlantTypeName": "dusklobber",
+                "LayerName": "custom_02",
+                "FriendlyName": "Stylish Newsboy Hat"
+            },
+            {
+                "CostumeID": 222,
+                "PlantTypeName": "grimrose",
+                "LayerName": "custom_01",
+                "FriendlyName": "Conical Hat"
+            },
+            {
+                "CostumeID": 223,
+                "PlantTypeName": "grimrose",
+                "LayerName": "custom_02",
+                "FriendlyName": "Wide Brimmed Hat"
+            },
+            {
+                "CostumeID": 224,
+                "PlantTypeName": "goldbloom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Malcom"
+            },
+            {
+                "CostumeID": 225,
+                "PlantTypeName": "goldbloom",
+                "LayerName": "custom_02",
+                "FriendlyName": "Gold Rimmed Shades"
+            },
+            {
+                "CostumeID": 226,
+                "PlantTypeName": "electriccurrant",
+                "LayerName": "custom_01",
+                "FriendlyName": "Alligator Clips"
+            },
+            {
+                "CostumeID": 227,
+                "PlantTypeName": "electriccurrant",
+                "LayerName": "custom_02",
+                "FriendlyName": "Blue Light Bulb"
+            },
+            {
+                "CostumeID": 228,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_08",
+                "FriendlyName": "Time Twist - Prehistoric shirt and tie"
+            },
+            {
+                "CostumeID": 229,
+                "PlantTypeName": "melonpult",
+                "LayerName": "custom_05",
+                "FriendlyName": "Time Twist - Red Antenna"
+            },
+            {
+                "CostumeID": 230,
+                "PlantTypeName": "cabbagepult",
+                "LayerName": "custom_05",
+                "FriendlyName": "Time Twist - Triceratops horns"
+            },
+            {
+                "CostumeID": 231,
+                "PlantTypeName": "wasabiwhip",
+                "LayerName": "custom_01",
+                "FriendlyName": "Blue Headband"
+            },
+            {
+                "CostumeID": 232,
+                "PlantTypeName": "explodeonut",
+                "LayerName": "custom_01",
+                "FriendlyName": "Flames and Pipes"
+            },
+            {
+                "CostumeID": 233,
+                "PlantTypeName": "aloe",
+                "LayerName": "custom_01",
+                "FriendlyName": "LEAF pennant"
+            },
+            {
+                "CostumeID": 234,
+                "PlantTypeName": "aloe",
+                "LayerName": "custom_02",
+                "FriendlyName": "flower pennant"
+            },
+            {
+                "CostumeID": 235,
+                "PlantTypeName": "kiwibeast",
+                "LayerName": "custom_01",
+                "FriendlyName": "Pink Pigtails"
+            },
+            {
+                "CostumeID": 236,
+                "PlantTypeName": "kiwibeast",
+                "LayerName": "custom_02",
+                "FriendlyName": "Golden Crown"
+            },
+            {
+                "CostumeID": 237,
+                "PlantTypeName": "bonkchoy",
+                "LayerName": "custom_09",
+                "FriendlyName": "Grass Kunckles"
+            },
+            {
+                "CostumeID": 238,
+                "PlantTypeName": "torchwood",
+                "LayerName": "custom_05",
+                "FriendlyName": "Captain Combustible"
+            },
+            {
+                "CostumeID": 239,
+                "PlantTypeName": "fumeshroom",
+                "LayerName": "custom_02",
+                "FriendlyName": "Nightcap"
+            },
+            {
+                "CostumeID": 240,
+                "PlantTypeName": "applemortar",
+                "LayerName": "custom_01",
+                "FriendlyName": "Camo Shorts"
+            },
+            {
+                "CostumeID": 241,
+                "PlantTypeName": "bombegranate",
+                "LayerName": "custom_01",
+                "FriendlyName": "Ear Protection"
+            },
+            {
+                "CostumeID": 242,
+                "PlantTypeName": "bombegranate",
+                "LayerName": "custom_02",
+                "FriendlyName": "Pigtails"
+            },
+            {
+                "CostumeID": 243,
+                "PlantTypeName": "missiletoe",
+                "LayerName": "custom_01",
+                "FriendlyName": "Bow"
+            },
+            {
+                "CostumeID": 244,
+                "PlantTypeName": "missiletoe",
+                "LayerName": "custom_02",
+                "FriendlyName": "Scarf"
+            },
+            {
+                "CostumeID": 245,
+                "PlantTypeName": "parsnip",
+                "LayerName": "custom_01",
+                "FriendlyName": "Cat Ears"
+            },
+            {
+                "CostumeID": 246,
+                "PlantTypeName": "parsnip",
+                "LayerName": "custom_02",
+                "FriendlyName": "Crab"
+            },
+            {
+                "CostumeID": 247,
+                "PlantTypeName": "witchhazel",
+                "LayerName": "custom_01",
+                "FriendlyName": "Witch Hat"
+            },
+            {
+                "CostumeID": 248,
+                "PlantTypeName": "witchhazel",
+                "LayerName": "custom_02",
+                "FriendlyName": "Nightcap"
+            },
+            {
+                "CostumeID": 249,
+                "PlantTypeName": "hotdate",
+                "LayerName": "custom_01",
+                "FriendlyName": "Chocolate"
+            },
+            {
+                "CostumeID": 250,
+                "PlantTypeName": "caulipower",
+                "LayerName": "custom_01",
+                "FriendlyName": "Graduate"
+            },
+            {
+                "CostumeID": 251,
+                "PlantTypeName": "electricpeashooter",
+                "LayerName": "custom_01",
+                "FriendlyName": "Neon Arrow"
+            },
+            {
+                "CostumeID": 252,
+                "PlantTypeName": "solartomato",
+                "LayerName": "custom_01",
+                "FriendlyName": "Baseball Cap"
+            },
+            {
+                "CostumeID": 253,
+                "PlantTypeName": "hollyknight",
+                "LayerName": "custom_01",
+                "FriendlyName": "Blue Ribbon"
+            },
+            {
+                "CostumeID": 254,
+                "PlantTypeName": "shadowpeashooter",
+                "LayerName": "custom_01",
+                "FriendlyName": "Sun Hat"
+            },
+            {
+                "CostumeID": 255,
+                "PlantTypeName": "slingpea",
+                "LayerName": "custom_01",
+                "FriendlyName": "Racing Trim"
+            },
+            {
+                "CostumeID": 256,
+                "PlantTypeName": "poisonpeashooter",
+                "LayerName": "custom_01",
+                "FriendlyName": "Hazmat Helmet"
+            },
+            {
+                "CostumeID": 257,
+                "PlantTypeName": "snappea",
+                "LayerName": "custom_01",
+                "FriendlyName": "Bonnet"
+            },
+            {
+                "CostumeID": 258,
+                "PlantTypeName": "zoybeanpod",
+                "LayerName": "custom_01",
+                "FriendlyName": "Skis"
+            },
+            {
+                "CostumeID": 259,
+                "PlantTypeName": "electricitea",
+                "LayerName": "custom_01",
+                "FriendlyName": "Cowboy Hat"
+            },
+            {
+                "CostumeID": 260,
+                "PlantTypeName": "pokra",
+                "LayerName": "custom_01",
+                "FriendlyName": "Bow"
+            },
+            {
+                "CostumeID": 261,
+                "PlantTypeName": "imppear",
+                "LayerName": "custom_01",
+                "FriendlyName": "Mustache"
+            },
+            {
+                "CostumeID": 262,
+                "PlantTypeName": "icebloom",
+                "LayerName": "custom_01",
+                "FriendlyName": "Glasses"
+            },
+            {
+                "CostumeID": 263,
+                "PlantTypeName": "dartichoke",
+                "LayerName": "custom_01",
+                "FriendlyName": "Bandana"
+            },
+            {
+                "CostumeID": 264,
+                "PlantTypeName": "gumnut",
+                "LayerName": "custom_01",
+                "FriendlyName": "Clown Wigs"
+            },
+            {
+                "CostumeID": 265,
+                "PlantTypeName": "puffshroom",
+                "LayerName": "custom_02",
+                "FriendlyName": "Cowboy Hat"
+            },
+            {
+                "CostumeID": 266,
+                "PlantTypeName": "puffball",
+                "LayerName": "custom_01",
+                "FriendlyName": "Explorer Hat"
+            },
+            {
+                "CostumeID": 267,
+                "PlantTypeName": "olivepit",
+                "LayerName": "custom_01",
+                "FriendlyName": "Neon Arrow"
+            },
+            {
+                "CostumeID": 268,
+                "PlantTypeName": "turkeypult",
+                "LayerName": "custom_01",
+                "FriendlyName": "Visor"
+            },
+            {
+                "CostumeID": 269,
+                "PlantTypeName": "headbutter",
+                "LayerName": "custom_01",
+                "FriendlyName": "Punked Hair Leaf"
+            },
+            {
+                "CostumeID": 270,
+                "PlantTypeName": "boingsetta",
+                "LayerName": "custom_01",
+                "FriendlyName": "Winter Red Bow"
+            },
+            {
+                "CostumeID": 271,
+                "PlantTypeName": "stickybombrice",
+                "LayerName": "custom_01",
+                "FriendlyName": "Granny Glasses"
+            },
+            {
+                "CostumeID": 272,
+                "PlantTypeName": "hocus",
+                "LayerName": "custom_01",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 273,
+                "PlantTypeName": "sunflower",
+                "LayerName": "custom_01",
+                "FriendlyName": "Window Blinds Glasses"
+            },
+            {
+                "CostumeID": 274,
+                "PlantTypeName": "sunflower",
+                "LayerName": "custom_02",
+                "FriendlyName": "Round Glasses"
+            },
+            {
+                "CostumeID": 275,
+                "PlantTypeName": "sunflower",
+                "LayerName": "custom_03",
+                "FriendlyName": "Red Glasses"
+            },
+            {
+                "CostumeID": 276,
+                "PlantTypeName": "sunflower",
+                "LayerName": "custom_04",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 277,
+                "PlantTypeName": "sunflower",
+                "LayerName": "custom_halloween",
+                "FriendlyName": "Witch Hat"
+            },
+            {
+                "CostumeID": 278,
+                "PlantTypeName": "sunflower",
+                "LayerName": "custom_holiday",
+                "FriendlyName": "Red Bow"
+            },
+            {
+                "CostumeID": 279,
+                "PlantTypeName": "sunflower",
+                "LayerName": "custom_thingsandstuff",
+                "FriendlyName": "Hero Solar Flare"
+            },
+            {
+                "CostumeID": 280,
+                "PlantTypeName": "sunflower",
+                "LayerName": "custom_valentines",
+                "FriendlyName": "Heart Glasses"
+            },
+            {
+                "CostumeID": 281,
+                "PlantTypeName": "peashooter",
+                "LayerName": "custom_01",
+                "FriendlyName": "Lucky Hat"
+            },
+            {
+                "CostumeID": 282,
+                "PlantTypeName": "peashooter",
+                "LayerName": "custom_02",
+                "FriendlyName": "Tiny Crown"
+            },
+            {
+                "CostumeID": 283,
+                "PlantTypeName": "peashooter",
+                "LayerName": "custom_03",
+                "FriendlyName": "Baseball Cap"
+            },
+            {
+                "CostumeID": 284,
+                "PlantTypeName": "peashooter",
+                "LayerName": "custom_04",
+                "FriendlyName": "Top Hat"
+            },
+            {
+                "CostumeID": 285,
+                "PlantTypeName": "peashooter",
+                "LayerName": "custom_halloween",
+                "FriendlyName": "Cowboy Costume"
+            },
+            {
+                "CostumeID": 286,
+                "PlantTypeName": "peashooter",
+                "LayerName": "custom_holiday",
+                "FriendlyName": "Earmuffs"
+            },
+            {
+                "CostumeID": 287,
+                "PlantTypeName": "peashooter",
+                "LayerName": "custom_thingsandstuff",
+                "FriendlyName": "Hero Green Shadow"
+            },
+            {
+                "CostumeID": 288,
+                "PlantTypeName": "peashooter",
+                "LayerName": "custom_valentines",
+                "FriendlyName": "Heart Headband"
+            },
+            {
+                "CostumeID": 289,
+                "PlantTypeName": "wallnut",
+                "LayerName": "custom_01",
+                "FriendlyName": "Blue Bowtie"
+            },
+            {
+                "CostumeID": 290,
+                "PlantTypeName": "wallnut",
+                "LayerName": "custom_02",
+                "FriendlyName": "Red Bowtie"
+            },
+            {
+                "CostumeID": 291,
+                "PlantTypeName": "wallnut",
+                "LayerName": "custom_03",
+                "FriendlyName": "Green Bowtie"
+            },
+            {
+                "CostumeID": 292,
+                "PlantTypeName": "wallnut",
+                "LayerName": "custom_04",
+                "FriendlyName": "Waiter Bib"
+            },
+            {
+                "CostumeID": 293,
+                "PlantTypeName": "wallnut",
+                "LayerName": "custom_halloween",
+                "FriendlyName": "Mummy Wrap"
+            },
+            {
+                "CostumeID": 294,
+                "PlantTypeName": "wallnut",
+                "LayerName": "custom_holiday",
+                "FriendlyName": "Warm Scarf"
+            },
+            {
+                "CostumeID": 295,
+                "PlantTypeName": "wallnut",
+                "LayerName": "custom_thingsandstuff",
+                "FriendlyName": "Hero WallKnight"
+            },
+            {
+                "CostumeID": 296,
+                "PlantTypeName": "wallnut",
+                "LayerName": "custom_valentines",
+                "FriendlyName": "Red Heart Tie"
+            },
+            {
+                "CostumeID": 297,
+                "PlantTypeName": "draftodil",
+                "LayerName": "custom_01",
+                "FriendlyName": "Bunny Slippers"
+            },
+            {
+                "CostumeID": 298,
+                "PlantTypeName": "boomflower",
+                "LayerName": "custom_01",
+                "FriendlyName": "Party Hat"
+            },
+            {
+                "CostumeID": 299,
+                "PlantTypeName": "inferno",
+                "LayerName": "custom_01",
+                "FriendlyName": "Gas Mask"
+            },
+            {
+                "CostumeID": 300,
+                "PlantTypeName": "solarsage",
+                "LayerName": "custom_01",
+                "FriendlyName": "Carpet"
+            },
+            {
+                "CostumeID": 301,
+                "PlantTypeName": "noctarine",
+                "LayerName": "custom_01",
+                "FriendlyName": "Sleep Mask"
+            },
+            {
+                "CostumeID": 302,
+                "PlantTypeName": "heathseeker",
+                "LayerName": "custom_01",
+                "FriendlyName": "Hat"
+            },
+            {
+                "CostumeID": 303,
+                "PlantTypeName": "iceweed",
+                "LayerName": "custom_01",
+                "FriendlyName": "Ice Axe"
+            },
+            {
+                "CostumeID": 304,
+                "PlantTypeName": "teleportatomine",
+                "LayerName": "custom_01",
+                "FriendlyName": "Goofy Face"
+            },
+            {
+                "CostumeID": 305,
+                "PlantTypeName": "blockoli",
+                "LayerName": "custom_01",
+                "FriendlyName": "Aviators"
+            },
+            {
+                "CostumeID": 306,
+                "PlantTypeName": "buttercup",
+                "LayerName": "custom_01",
+                "FriendlyName": "Pancakes"
+            },
+            {
+                "CostumeID": 307,
+                "PlantTypeName": "bramblebush",
+                "LayerName": "custom_01",
+                "FriendlyName": "selfie stick"
+            },
+            {
+                "CostumeID": 308,
+                "PlantTypeName": "rhubarbarian",
+                "LayerName": "custom_01",
+                "FriendlyName": "Grass Skirt"
+            },
+            {
+                "CostumeID": 309,
+                "PlantTypeName": "megagatling",
+                "LayerName": "custom_01",
+                "FriendlyName": "Red Goggles"
+            }
+        ]
+    }
+}

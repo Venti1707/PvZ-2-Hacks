@@ -1,0 +1,1733 @@
+{
+    "#comment": "Scoring Playtest - Right Gradient - No Quickstart",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "",
+                "DisablePlantBoosts": true,
+                "GridItemLevel": 1,
+                "LevelNumber": 1,
+                "LevelPowerupSet": "LevelPowerupsDisabled",
+                "Loot": "RTID(NoLoot@LevelModules)",
+                "LossModule": "RTID(JoustOutro@LevelModules)",
+                "Modules": [
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(JoustDarkMowers@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(JoustZombieWinCondition@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(LevelScoring@CurrentLevel)",
+                    "RTID(ScoreTiles@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(LastStand@CurrentLevel)",
+                    "RTID(LevelDifficultyScaling@CurrentLevel)",
+                    "RTID(JoustModule@CurrentLevel)",
+                    "RTID(ZombiePotions@CurrentLevel)",
+                    "RTID(JoustPointOfLoss@LevelModules)",
+                    "RTID(ZombieResistances@CurrentLevel)",
+                    "RTID(FrozenPlantPlacement@CurrentLevel)",
+                    "RTID(Gravestones@CurrentLevel)"
+                ],
+                "Name": "",
+                "NormalPresentTable": "dark_normal_01",
+                "ShinyPresentTable": "dark_shiny_01",
+                "StageModule": "RTID(JoustStage@LevelModules)",
+                "SuppressAccountUpgrades": true,
+                "SuppressDynamicTutorial": true,
+                "SuppressPlantfoodPurchase": true,
+                "VictoryModule": "RTID(JoustOutro@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PlantExcludeList": [
+                    "blover"
+                ],
+                "PresetPlantList": [
+                    {
+                        "Level": -1,
+                        "PlantType": "murkadamia"
+                    }
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "ZombieResistances"
+            ],
+            "objclass": "ZombieResistancesModuleProperties",
+            "objdata": {
+                "FamilyResistances": {
+                    "global": [
+                        {
+                            "#comment": "200% damage and condition",
+                            "ConditionResistance": 2,
+                            "DamageResistance": 2,
+                            "FamilyType": "concealmint"
+                        },
+                        {
+                            "#comment": "50% damage and condition",
+                            "ConditionResistance": 0.5,
+                            "DamageResistance": 0.5,
+                            "FamilyType": "filamint"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "aliases": [
+                "ZombiePotions"
+            ],
+            "objclass": "ZombiePotionModuleProperties",
+            "objdata": {
+                "InitialPotionCount": 0,
+                "MaxPotionCount": 2,
+                "PotionSpawnTimer": {
+                    "Max": 1,
+                    "Min": 0.5
+                },
+                "PotionTypes": [
+                    "zombiepotion_speed",
+                    "zombiepotion_toughness"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "FrozenPlantPlacement"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "Condition": "icecubed",
+                        "GridX": 8,
+                        "GridY": 1,
+                        "Level": 10,
+                        "TypeName": "goldbloom"
+                    },
+                    {
+                        "Condition": "icecubed",
+                        "GridX": 8,
+                        "GridY": 2,
+                        "Level": 10,
+                        "TypeName": "goldbloom"
+                    },
+                    {
+                        "Condition": "icecubed",
+                        "GridX": 8,
+                        "GridY": 3,
+                        "Level": 10,
+                        "TypeName": "goldbloom"
+                    },
+                    {
+                        "Condition": "icecubed",
+                        "GridX": 8,
+                        "GridY": 4,
+                        "Level": 10,
+                        "TypeName": "goldbloom"
+                    },
+                    {
+                        "Condition": "icecubed",
+                        "GridX": 8,
+                        "GridY": 0,
+                        "Level": 10,
+                        "TypeName": "goldbloom"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Gravestones"
+            ],
+            "objclass": "GravestoneProperties",
+            "objdata": {
+                "ForceSpawnData": [
+                    {
+                        "GridX": 7,
+                        "GridY": 0,
+                        "TypeName": "gravestone_battlez"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 1,
+                        "TypeName": "gravestone_battlez"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 2,
+                        "TypeName": "gravestone_battlez"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 3,
+                        "TypeName": "gravestone_battlez"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 4,
+                        "TypeName": "gravestone_battlez"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "JoustModule"
+            ],
+            "objclass": "JoustGameModuleProperties",
+            "objdata": {
+                "LeagueModifiers": [
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 0,
+                        "LeagueThreshold": 1
+                    },
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 1,
+                        "LeagueThreshold": 2
+                    },
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 2,
+                        "LeagueThreshold": 3
+                    },
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 3,
+                        "LeagueThreshold": 4
+                    },
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 4,
+                        "LeagueThreshold": 5
+                    },
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 5,
+                        "LeagueThreshold": 6
+                    },
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 6,
+                        "LeagueThreshold": 7
+                    },
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 7,
+                        "LeagueThreshold": 8
+                    },
+                    {
+                        "AddTimeLimit": 0,
+                        "AddZombieLevel": 8,
+                        "LeagueThreshold": 9
+                    }
+                ],
+                "LevelLoadouts": {
+                    "Loadouts": [
+                        [
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "murkadamia"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "moonflower"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "concealmint"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "dusklobber"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "shadowpeashooter"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "olivepit"
+                            }
+                        ],
+                        [
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "murkadamia"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "ultomato"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "concealmint"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "filamint"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "tallnut"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "electricpeashooter"
+                            }
+                        ],
+                        [
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "murkadamia"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "wintermint"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "moonflower"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "concealmint"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "coldsnapdragon"
+                            },
+                            {
+                                "IsImitater": false,
+                                "PlantLevel": 0,
+                                "PlantType": "icebloom"
+                            }
+                        ]
+                    ]
+                },
+                "PeriodOfWavesToLoop": 12,
+                "TimeLimit": 180,
+                "WaveSetsToAppend": 10
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(BeatTheLevel@CurrentLevel)",
+                        "RTID(ReachTheScore@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "ReachTheScore"
+            ],
+            "objclass": "StarChallengeTargetScoreProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_TARGET_SCORE]",
+                "DescriptionFailure": "[STARCHALLENGE_TARGET_SCORE_FAILURE]",
+                "DescriptiveName": "[STARCHALLENGE_TARGET_SCORE_NAME]",
+                "TargetScore": 1000
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]",
+                "DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_EVILSHROOMS]",
+                "DescriptiveName": "[STARCHALLENGE_EVILSHROOMS_NAME]"
+            }
+        },
+        {
+            "aliases": [
+                "LastStand"
+            ],
+            "objclass": "LastStandMinigameProperties",
+            "objdata": {
+                "StartingPlantfood": 0,
+                "StartingSun": 1500
+            }
+        },
+        {
+            "aliases": [
+                "LevelScoring"
+            ],
+            "objclass": "LevelScoringModuleProperties",
+            "objdata": {
+                "PlantBonusMultiplier": 0.1,
+                "PlantBonuses": [],
+                "ScoringRulesType": "Battlez",
+                "StartingPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "ScoreTiles"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 8,
+                        "GridY": 0,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 1,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 2,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 3,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 4,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 0,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 1,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 2,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 3,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 4,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 0,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 1,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 2,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 3,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 4,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 0,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 1,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 2,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 3,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 4,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 0,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 1,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 2,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 3,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 4,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 0,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 1,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 2,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 3,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 4,
+                        "TypeName": "score_2x_tile"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "DynamicZombies": [
+                    {
+                        "PointIncrementPerWave": -1,
+                        "StartingPoints": -1,
+                        "StartingWave": 1,
+                        "ZombiePool": [
+                            "RTID(beach_fem@ZombieTypes)",
+                            "RTID(chicken_farmer@ZombieTypes)",
+                            "RTID(modern_newspaper@ZombieTypes)",
+                            "RTID(prospector@ZombieTypes)",
+                            "RTID(seagull@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": -1,
+                        "StartingPoints": -1,
+                        "StartingWave": 1,
+                        "ZombiePool": [
+                            "RTID(beach_fem@ZombieTypes)",
+                            "RTID(chicken_farmer@ZombieTypes)",
+                            "RTID(modern_newspaper@ZombieTypes)",
+                            "RTID(prospector@ZombieTypes)",
+                            "RTID(seagull@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": -1,
+                        "StartingPoints": -1,
+                        "StartingWave": 1,
+                        "ZombiePool": [
+                            "RTID(beach_fem@ZombieTypes)",
+                            "RTID(chicken_farmer@ZombieTypes)",
+                            "RTID(modern_newspaper@ZombieTypes)",
+                            "RTID(prospector@ZombieTypes)",
+                            "RTID(seagull@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "MaxPoints": 4000,
+                        "PointIncrementPerWave": 225,
+                        "StartingPoints": 1000,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(beach_fem@ZombieTypes)",
+                            "RTID(chicken_farmer@ZombieTypes)",
+                            "RTID(modern_newspaper@ZombieTypes)",
+                            "RTID(prospector@ZombieTypes)",
+                            "RTID(seagull@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 1,
+                        "StartingPoints": 1,
+                        "StartingWave": 1,
+                        "ZombiePool": [
+                            "RTID(beach_fem@ZombieTypes)",
+                            "RTID(chicken_farmer@ZombieTypes)",
+                            "RTID(modern_newspaper@ZombieTypes)",
+                            "RTID(prospector@ZombieTypes)",
+                            "RTID(seagull@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 1,
+                        "StartingPoints": 1,
+                        "StartingWave": 1,
+                        "ZombiePool": [
+                            "RTID(chicken_farmer@ZombieTypes)",
+                            "RTID(modern_newspaper@ZombieTypes)",
+                            "RTID(prospector@ZombieTypes)",
+                            "RTID(seagull@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 1,
+                        "StartingPoints": 1,
+                        "StartingWave": 1,
+                        "ZombiePool": [
+                            "RTID(chicken_farmer@ZombieTypes)",
+                            "RTID(modern_newspaper@ZombieTypes)",
+                            "RTID(prospector@ZombieTypes)",
+                            "RTID(seagull@ZombieTypes)"
+                        ]
+                    }
+                ],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "LevelDifficultyScaling"
+            ],
+            "objclass": "LevelDifficultyScalingModuleProperties",
+            "objdata": {
+                "DifficultyRulesType": "DifficultyTestHighDecay",
+                "ZombieLevelSwaps": [
+                    {
+                        "Level": 3,
+                        "Swaps": [
+                            {
+                                "From": "RTID(seagull@ZombieTypes)",
+                                "To": [
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(pelican@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_newspaper@ZombieTypes)",
+                                "To": [
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(newspaper_veteran@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(beach_fem@ZombieTypes)",
+                                "To": [
+                                    "RTID(future@ZombieTypes)",
+                                    "RTID(future@ZombieTypes)",
+                                    "RTID(future_armor1@ZombieTypes)",
+                                    "RTID(future_armor1@ZombieTypes)",
+                                    "RTID(future_armor2@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 5,
+                        "Swaps": [
+                            {
+                                "From": "RTID(seagull@ZombieTypes)",
+                                "To": [
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(pelican@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_newspaper@ZombieTypes)",
+                                "To": [
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(newspaper_veteran@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(beach_fem@ZombieTypes)",
+                                "To": [
+                                    "RTID(future@ZombieTypes)",
+                                    "RTID(future_armor1@ZombieTypes)",
+                                    "RTID(future_armor1@ZombieTypes)",
+                                    "RTID(future_armor2@ZombieTypes)",
+                                    "RTID(future_armor2@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 7,
+                        "Swaps": [
+                            {
+                                "From": "RTID(seagull@ZombieTypes)",
+                                "To": [
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(pelican@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_newspaper@ZombieTypes)",
+                                "To": [
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(newspaper_veteran@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(beach_fem@ZombieTypes)",
+                                "To": [
+                                    "RTID(future_armor1@ZombieTypes)",
+                                    "RTID(future_armor2@ZombieTypes)",
+                                    "RTID(future_armor2@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 8,
+                        "Swaps": [
+                            {
+                                "From": "RTID(seagull@ZombieTypes)",
+                                "To": [
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(pelican@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_newspaper@ZombieTypes)",
+                                "To": [
+                                    "RTID(modern_newspaper@ZombieTypes)",
+                                    "RTID(newspaper_veteran@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(beach_fem@ZombieTypes)",
+                                "To": [
+                                    "RTID(future_armor2@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(future_armor4@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 9,
+                        "Swaps": [
+                            {
+                                "From": "RTID(seagull@ZombieTypes)",
+                                "To": [
+                                    "RTID(pelican@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(modern_newspaper@ZombieTypes)",
+                                "To": [
+                                    "RTID(newspaper_veteran@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(beach_fem@ZombieTypes)",
+                                "To": [
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(future_armor4@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 12,
+                "WaveCount": 24,
+                "WaveSpendingPointIncrement": 150,
+                "WaveSpendingPoints": 0,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)",
+                        "RTID(Wave3GraveSpawnEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)",
+                        "RTID(Wave4RaidingPartyEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)",
+                        "RTID(Wave7GraveSpawnEvent0@CurrentLevel)",
+                        "RTID(Wave7GraveSpawnEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)",
+                        "RTID(Wave9RaidingPartyEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)",
+                        "RTID(Wave10GraveSpawnEvent0@CurrentLevel)",
+                        "RTID(Wave10GraveSpawnEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13@CurrentLevel)",
+                        "RTID(Wave13GraveSpawnEvent0@CurrentLevel)",
+                        "RTID(Wave13GraveSpawnEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15@CurrentLevel)",
+                        "RTID(Wave15RaidingPartyEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave16@CurrentLevel)",
+                        "RTID(Wave16GraveSpawnEvent0@CurrentLevel)",
+                        "RTID(Wave16GraveSpawnEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave17@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave18@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave19@CurrentLevel)",
+                        "RTID(Wave19GraveSpawnEvent0@CurrentLevel)",
+                        "RTID(Wave19GraveSpawnEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave20@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave21@CurrentLevel)",
+                        "RTID(Wave21RaidingPartyEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave22@CurrentLevel)",
+                        "RTID(Wave22GraveSpawnEvent0@CurrentLevel)",
+                        "RTID(Wave22GraveSpawnEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave23@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave24@CurrentLevel)",
+                        "RTID(Wave24RaidingPartyEvent0@CurrentLevel)"
+                    ]
+                ],
+                "WavesAlwaysRandomized": true
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave11"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave12"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(roman_gargantuar@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave14"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave15"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave16"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave17"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave18"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave19"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave20"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave21"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave22"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave23"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave24"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(roman_gargantuar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(roman_healer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave24RaidingPartyEvent0"
+            ],
+            "objclass": "RaidingPartyZombieSpawnerProps",
+            "objdata": {
+                "GroupSize": "1",
+                "SwashbucklerCount": "15",
+                "TimeBetweenGroups": "1"
+            }
+        },
+        {
+            "aliases": [
+                "Wave9RaidingPartyEvent0"
+            ],
+            "objclass": "RaidingPartyZombieSpawnerProps",
+            "objdata": {
+                "GroupSize": "1",
+                "SwashbucklerCount": "10",
+                "TimeBetweenGroups": "1"
+            }
+        },
+        {
+            "aliases": [
+                "Wave4RaidingPartyEvent0"
+            ],
+            "objclass": "RaidingPartyZombieSpawnerProps",
+            "objdata": {
+                "GroupSize": "1",
+                "SwashbucklerCount": "5",
+                "TimeBetweenGroups": "1"
+            }
+        },
+        {
+            "aliases": [
+                "Wave15RaidingPartyEvent0"
+            ],
+            "objclass": "RaidingPartyZombieSpawnerProps",
+            "objdata": {
+                "GroupSize": "1",
+                "SwashbucklerCount": "15",
+                "TimeBetweenGroups": "1"
+            }
+        },
+        {
+            "aliases": [
+                "Wave21RaidingPartyEvent0"
+            ],
+            "objclass": "RaidingPartyZombieSpawnerProps",
+            "objdata": {
+                "GroupSize": "1",
+                "SwashbucklerCount": "15",
+                "TimeBetweenGroups": "1"
+            }
+        },
+        {
+            "aliases": [
+                "Wave7GraveSpawnEvent0"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7GraveSpawnEvent1"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10GraveSpawnEvent0"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10GraveSpawnEvent1"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13GraveSpawnEvent0"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13GraveSpawnEvent1"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave16GraveSpawnEvent0"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave16GraveSpawnEvent1"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave19GraveSpawnEvent0"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave19GraveSpawnEvent1"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave22GraveSpawnEvent0"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave22GraveSpawnEvent1"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_fem@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3GraveSpawnEvent0"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "AdditionalPlantfood": "0",
+                "GridTypes": [
+                    "RTID(gravestone_battlez@GridItemTypes)"
+                ],
+                "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]",
+                "ZombieSpawnWaitTime": "1",
+                "Zombies": [
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

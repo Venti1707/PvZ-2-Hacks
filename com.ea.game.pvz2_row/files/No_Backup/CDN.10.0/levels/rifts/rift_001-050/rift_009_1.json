@@ -1,0 +1,418 @@
+{
+    "#comment": "Rift 1A Node 9 - Modern 27",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_TRIP_TO_RIFT]",
+                "Loot": "",
+                "LevelNumber": "",
+                "LevelPowerupSet": "LevelPowerupsBeghouled",
+                "Modules": [
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(BeghouledRiftIntro@LevelModules)",
+                    "RTID(ModernMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(RandomSpawner@CurrentLevel)",
+                    "RTID(BeghouledSeedBank@CurrentLevel)",
+                    "RTID(BeghouledProps@CurrentLevel)",
+                    "RTID(PerkActivator@CurrentLevel)",
+                    "RTID(LevelDifficultyScaling@CurrentLevel)"
+                ],
+                "MusicType": "MiniGame_B",
+                "Name": "[RIFT_LEVEL_NAME]",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "VictoryModule": "RTID(RiftOutro@LevelModules)",
+                "StageModule": "RTID(ModernStage@LevelModules)",
+                "LevelMutator": "RTID(LevelMutator@CurrentLevel)",
+                "PerksDisabledInLevel": [
+                    "bossbustercannon",
+                    "mineisyours",
+                    "mineisyours_shinevine",
+                    "mineisyours_goldbloom"
+                ],
+                "PerksDisabledPerDifficulty": [
+                    [],
+                    [],
+                    []
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LevelDifficultyScaling"
+            ],
+            "objclass": "LevelDifficultyScalingModuleProperties",
+            "objdata": {
+                "DifficultyRulesType": "RiftDifficulty",
+                "ZombieLevelSwaps": [
+                    {
+                        "Level": 0,
+                        "Swaps": [
+                            {
+                                "From": "RTID(roman@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 4,
+                        "Swaps": [
+                            {
+                                "From": "RTID(roman@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 7,
+                        "Swaps": [
+                            {
+                                "From": "RTID(roman@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor2@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "BeghouledSeedBankProperties",
+            "aliases": [
+                "BeghouledSeedBank"
+            ],
+            "objdata": {
+                "PresetPlantList": [
+                    {
+                        "PlantType": "primalpeashooter",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "repeater",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "tallnut",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "endurian",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "coldsnapdragon",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "laser_bean",
+                        "Level": -1
+                    }
+                ],
+                "BeghouledUpgradeList": [
+                    "threepeater",
+                    "electricpeashooter",
+                    "wintermelon",
+                    "torchwood"
+                ],
+                "SelectionMethod": "beghouled"
+            }
+        },
+        {
+            "aliases": [
+                "PerkActivator"
+            ],
+            "objclass": "PerkHandlerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "LevelMutator"
+            ],
+            "objclass": "LevelMutatorModuleProperties",
+            "objdata": {
+                "MutatorTables": [
+                    "RTID(MutatorPropsBeghouled@LevelMutatorTables)",
+                    "RTID(LocalChallengeMutator@CurrentLevel)",
+                    "RTID(LocalMainChallengeMutator@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LocalMainChallengeMutator"
+            ],
+            "objclass": "LevelMutatorTableProps",
+            "objdata": {
+                "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_RIFT_NORMAL]",
+                "DescriptiveName": "[STARCHALLENGE_RIFT_NORMAL_NAME]"
+            }
+        },
+        {
+            "aliases": [
+                "LocalChallengeMutator"
+            ],
+            "objclass": "LevelMutatorTableProps",
+            "objdata": {
+                "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [
+                            "RTID(ZombieDistance1@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [
+                            "RTID(ZombieDistance2@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [
+                            "RTID(ZombieDistance3@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ZombieDistance1"
+            ],
+            "objclass": "StarChallengeZombieDistanceProps",
+            "objdata": {
+                "TargetDistance": 3
+            }
+        },
+        {
+            "aliases": [
+                "ZombieDistance2"
+            ],
+            "objclass": "StarChallengeZombieDistanceProps",
+            "objdata": {
+                "TargetDistance": 4
+            }
+        },
+        {
+            "aliases": [
+                "ZombieDistance3"
+            ],
+            "objclass": "StarChallengeZombieDistanceProps",
+            "objdata": {
+                "TargetDistance": 5
+            }
+        },
+        {
+            "objclass": "BeghouledZombieSpawnerProperties",
+            "aliases": [
+                "RandomSpawner"
+            ],
+            "objdata": {
+                "MatchCountsToStageAdvance": [
+                    {
+                        "MatchCount": 25,
+                        "StageNumber": 1
+                    },
+                    {
+                        "MatchCount": 50,
+                        "StageNumber": 2
+                    },
+                    {
+                        "MatchCount": 75,
+                        "StageNumber": 3
+                    }
+                ],
+                "Stages": [
+                    {
+                        "#comment": "Stage 0",
+                        "Types": [
+                            {
+                                "ZombieType": "roman"
+                            },
+                            {
+                                "ZombieType": "roman_imp"
+                            },
+                            {
+                                "ZombieType": "roman_armor1"
+                            },
+                            {
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "ZombieType": "roman_shield_triad"
+                            }
+                        ],
+                        "SpawnDelay": 2.0
+                    },
+                    {
+                        "#comment": "Stage 1",
+                        "Types": [
+                            {
+                                "ZombieType": "roman"
+                            },
+                            {
+                                "ZombieType": "roman_armor1"
+                            },
+                            {
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "ZombieType": "roman_armor3"
+                            },
+                            {
+                                "ZombieType": "roman_shield_triad"
+                            }
+                        ],
+                        "SpawnDelay": 1.75
+                    },
+                    {
+                        "#comment": "Stage 2",
+                        "Types": [
+                            {
+                                "ZombieType": "roman"
+                            },
+                            {
+                                "ZombieType": "roman_armor1"
+                            },
+                            {
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "ZombieType": "roman_armor3"
+                            },
+                            {
+                                "ZombieType": "roman_shield_triad"
+                            },
+                            {
+                                "ZombieType": "roman_healer"
+                            }
+                        ],
+                        "SpawnDelay": 1.5
+                    },
+                    {
+                        "#comment": "Stage 3",
+                        "Types": [
+                            {
+                                "ZombieType": "roman"
+                            },
+                            {
+                                "ZombieType": "roman_armor1"
+                            },
+                            {
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "ZombieType": "roman_armor3"
+                            },
+                            {
+                                "ZombieType": "roman_shield_triad"
+                            },
+                            {
+                                "ZombieType": "roman_healer"
+                            },
+                            {
+                                "ZombieType": "roman_ballista"
+                            }
+                        ],
+                        "SpawnDelay": 1.25
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "BeghouledPresetProperties",
+            "aliases": [
+                "BeghouledProps"
+            ],
+            "objdata": {
+                "MatchesToWin": 100,
+                "InitialPlants": [
+                    "peashooter",
+                    "wallnut",
+                    "snapdragon",
+                    "lightningreed"
+                ],
+                "UpgradeMap": [
+                    {
+                        "BasePlant": "peashooter",
+                        "UpgradedPlant": "primalpeashooter"
+                    },
+                    {
+                        "BasePlant": "peashooter",
+                        "UpgradedPlant": "repeater"
+                    },
+                    {
+                        "BasePlant": "repeater",
+                        "UpgradedPlant": "threepeater"
+                    },
+                    {
+                        "BasePlant": "wallnut",
+                        "UpgradedPlant": "tallnut"
+                    },
+                    {
+                        "BasePlant": "wallnut",
+                        "UpgradedPlant": "endurian"
+                    },
+                    {
+                        "BasePlant": "endurian",
+                        "UpgradedPlant": "torchwood"
+                    },
+                    {
+                        "BasePlant": "snapdragon",
+                        "UpgradedPlant": "coldsnapdragon"
+                    },
+                    {
+                        "BasePlant": "lightningreed",
+                        "UpgradedPlant": "laser_bean"
+                    },
+                    {
+                        "BasePlant": "laser_bean",
+                        "UpgradedPlant": "electricpeashooter"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

@@ -1,0 +1,40 @@
+{
+	"IgnoreForValidation": "true",
+	"#comment": "SandboxBeach",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Beach Sandbox Level",
+				"LevelNumber": 42,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"StageModule"	: "RTID(BeachStage@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(TestingSeedBank@CurrentLevel)",
+					"RTID(Tide@CurrentLevel)"
+				],
+				"Name": "Beach Sandbox"
+			}
+		},
+		{
+			"aliases": [
+				"TestingSeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [ "Tide" ],
+			"objclass": "TideProperties",
+			"objdata": {
+				"StartingWaveLocation" : 3.0
+			}
+		}
+	],
+	"version": 1
+}

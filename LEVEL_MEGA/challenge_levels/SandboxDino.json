@@ -1,0 +1,35 @@
+{
+    "IgnoreForValidation": "true",
+    "#comment": "SandboxDino",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "Dino Sandbox Level",
+                "LevelNumber": 42,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(DinoMowers@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)"
+                    
+                ],
+                "Name": "Dino Sandbox",
+                "StageModule": "RTID(DinoStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PlantExcludeList": [],
+                "SelectionMethod": "chooser"
+            }
+        }
+    ],
+    "version": 1
+}

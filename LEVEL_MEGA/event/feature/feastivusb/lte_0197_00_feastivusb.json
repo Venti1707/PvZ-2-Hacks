@@ -1,0 +1,399 @@
+{
+    "#comment": "Level Of The Day Default",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "DraperPromo": "none",
+                "FirstIntroNarrative": "",
+                "LevelNumber": 6,
+                "LevelPowerupSet": "LevelPowerupsDisabled",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(LevelEscalationModule@CurrentLevel)",
+                    "RTID(VeryFastSunDropper@LevelModules)",
+                    "RTID(SeedPacketHalfTimeModule@LevelModules)",
+                    "RTID(IceageMowers@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(FrozenPlantPlacement@CurrentLevel)"
+                ],
+                "Name": "[LTE_LEVEL_NAME_FEASTIVUS]",
+                "StageModule": "RTID(FeastivusStage@LevelModules)",
+                "StartingSun": 25
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PlantExcludeList": ["blover"],
+                "PresetPlantList": [
+                    {
+                        "Level": -1,
+                        "PlantType": "iceweed"
+                    }
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "FrozenPlantPlacement"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "GridX": 4,
+                        "GridY": 0,
+                        "Level": "-1",
+                        "TypeName": "tallnut"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 0,
+                        "Level": "-1",
+                        "TypeName": "wallnut"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 1,
+                        "Level": "-1",
+                        "TypeName": "springbean"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 1,
+                        "Level": "-1",
+                        "TypeName": "iceweed"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 1,
+                        "Level": "-1",
+                        "TypeName": "wallnut"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 2,
+                        "Level": "-1",
+                        "TypeName": "tallnut"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 2,
+                        "Level": "-1",
+                        "TypeName": "wallnut"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 3,
+                        "Level": "-1",
+                        "TypeName": "springbean"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 3,
+                        "Level": "-1",
+                        "TypeName": "iceweed"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 3,
+                        "Level": "-1",
+                        "TypeName": "wallnut"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 4,
+                        "Level": "-1",
+                        "TypeName": "tallnut"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 4,
+                        "Level": "-1",
+                        "TypeName": "wallnut"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LevelEscalationModule"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "FlagCount": 4,
+                "PlantfoodToSpawnCount": 2,
+                "PointIncrementPerWave": 25,
+                "StartingPoints": -200,
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "WavesPerFlag": 2,
+                "ZombiePool": [
+                    "RTID(feastivus@ZombieTypes)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "MaxNextWaveHealthPercentage": 0.8,
+                "MinNextWaveHealthPercentage": 0.7,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)",
+                        "RTID(Wave1FrostWindEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)",
+                        "RTID(Wave3FrostWindEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)",
+                        "RTID(Wave5FrostWindEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave1"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(nutcracker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(nutcracker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave2"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(nutcracker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave3"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave4"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(feastivus@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave5"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(feastivus_troglobite_1block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(feastivus_troglobite_1block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave6"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave7"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave8"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(nutcracker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(feastivus@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(feastivus_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(nutcracker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave1FrostWindEvent0"
+            ],
+            "objclass": "FrostWindWaveActionProps",
+            "objdata": {
+                "Winds": [
+                    {
+                        "Direction": "right",
+                        "Row": 1
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3FrostWindEvent0"
+            ],
+            "objclass": "FrostWindWaveActionProps",
+            "objdata": {
+                "Winds": [
+                    {
+                        "Direction": "right",
+                        "Row": 4
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5FrostWindEvent0"
+            ],
+            "objclass": "FrostWindWaveActionProps",
+            "objdata": {
+                "Winds": [
+                    {
+                        "Direction": "right",
+                        "Row": 1
+                    },
+                    {
+                        "Direction": "right",
+                        "Row": 4
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

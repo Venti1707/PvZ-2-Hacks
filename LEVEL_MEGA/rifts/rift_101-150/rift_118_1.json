@@ -1,0 +1,769 @@
+{
+	"#comment": "LOD 183",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_RIFT]",
+				"LevelNumber": "",
+				"LevelMutator": "RTID(LevelMutator@CurrentLevel)",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(FrontLawnMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(Gravestones@CurrentLevel)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(StandardRiftIntro@LevelModules)",
+					"RTID(PerkActivator@CurrentLevel)",
+					"RTID(LevelDifficultyScaling@CurrentLevel)"
+				],
+				"Name": "[RIFT_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"PerksDisabledInLevel": [
+					"moarscore",
+					"sunbreak",
+					"applyconditionsuncarrier50",
+					"sunbank",
+					"bossbustercannon",
+					"heavywatering",
+					"zombieinhibitorgargantuar",
+					"zombieinhibitorballista"
+				],
+				"PerksDisabledPerDifficulty": [
+					[],
+					[],
+					[]
+				],
+				"ShinyPresentTable": "egypt_shiny_01",
+				"StageModule": "RTID(RiftStage@LevelModules)",
+				"VictoryModule": "RTID(RiftOutro@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 12,
+				"MaxNextWaveHealthPercentage": 0.9,
+				"MinNextWaveHealthPercentage": 0.8,
+				"WaveCount": 12,
+				"WaveSpendingPointIncrement": 100,
+				"WaveSpendingPoints": 150,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(Wave1ModConveyor0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(piano@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gravestones"
+			],
+			"objclass": "GravestoneProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{},
+					{},
+					{},
+					{
+						"MaxPoints": 3600,
+						"PointIncrementPerWave": 75,
+						"StartingPoints": 100,
+						"StartingWave": 0,
+						"ZombiePool": [
+							"RTID(zcorp@ZombieTypes)",
+							"RTID(zcorp_armor1@ZombieTypes)",
+							"RTID(zcorp_armor2@ZombieTypes)",
+							"RTID(zcorp_fem@ZombieTypes)",
+							"RTID(zcorp_fem_armor1@ZombieTypes)",
+							"RTID(zcorp_fem_armor2@ZombieTypes)",
+							"RTID(tomb_raiser@ZombieTypes)",
+							"RTID(tomb_raiser@ZombieTypes)",
+							"RTID(tomb_raiser@ZombieTypes)"
+						]
+					},
+					{},
+					{},
+					{}
+				],
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
+			"objclass": "ConveyorSeedBankProperties",
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 3.5,
+						"MaxPackets": 0
+					},
+					{
+						"Delay": 6,
+						"MaxPackets": 2
+					},
+					{
+						"Delay": 9,
+						"MaxPackets": 4
+					},
+					{
+						"Delay": 12,
+						"MaxPackets": 8
+					}
+				],
+				"InitialPlantList": [
+					{
+						"PlantType": "peapod",
+						"Weight": 40
+					},
+					{
+						"PlantType": "chilibean",
+						"Weight": 30
+					}
+				],
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0,
+						"Speed": 100
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(eighties@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(piano@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1ModConveyor0"
+			],
+			"objclass": "ModifyConveyorWaveActionProps",
+			"objdata": {
+				"Add": [
+					{
+						"MaxWeightFactor": 10,
+						"MinWeightFactor": 0.1,
+						"Type": "RTID(grapeshot@PlantTypes)",
+						"Weight": 70
+					}
+				],
+				"Remove": []
+			}
+		},
+		{
+			"aliases": [
+				"PerkActivator"
+			],
+			"objclass": "PerkHandlerModuleProperties",
+			"objdata": {}
+		},
+		{
+			"aliases": [
+				"LevelMutator"
+			],
+			"objclass": "LevelMutatorModuleProperties",
+			"objdata": {
+				"MutatorTables": [
+					"RTID(MutatorPropsRiftConveyor@LevelMutatorTables)",
+					"RTID(LocalChallengeMutator@CurrentLevel)",
+					"RTID(LocalMainChallengeMutator@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LocalMainChallengeMutator"
+			],
+			"objclass": "LevelMutatorTableProps",
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0,
+						"ModuleType": "mainchallenge",
+						"Modules": [
+							"RTID(RiftBeatTheLevelChallenge@LevelModules)"
+						]
+					},
+					{
+						"Level": 1,
+						"ModuleType": "mainchallenge",
+						"Modules": [
+							"RTID(RiftBeatTheLevelChallenge@LevelModules)"
+						]
+					},
+					{
+						"Level": 2,
+						"ModuleType": "mainchallenge",
+						"Modules": [
+							"RTID(RiftBeatTheLevelChallenge@LevelModules)"
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LocalChallengeMutator"
+			],
+			"objclass": "LevelMutatorTableProps",
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0,
+						"ModuleType": "bonuschallenge",
+						"Modules": [
+							"RTID(ProtectThePlant@CurrentLevel)"
+						]
+					},
+					{
+						"Level": 1,
+						"ModuleType": "bonuschallenge",
+						"Modules": [
+							"RTID(ProtectThePlant@CurrentLevel)",
+							"RTID(KillZombies2@CurrentLevel)"
+						]
+					},
+					{
+						"Level": 2,
+						"ModuleType": "bonuschallenge",
+						"Modules": [
+							"RTID(ProtectThePlant@CurrentLevel)",
+							"RTID(KillZombies3@CurrentLevel)"
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 1,
+				"Plants": [
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"PlantType": "zoybeanpod"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"KillZombies2"
+			],
+			"objclass": "StarChallengeKillZombiesInTimeProps",
+			"objdata": {
+				"Time": 20,
+				"ZombiesToKill": 20
+			}
+		},
+		{
+			"aliases": [
+				"KillZombies3"
+			],
+			"objclass": "StarChallengeKillZombiesInTimeProps",
+			"objdata": {
+				"Time": 10,
+				"ZombiesToKill": 20
+			}
+		},
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			],
+			"objclass": "LevelDifficultyScalingModuleProperties",
+			"objdata": {
+				"DifficultyRulesType": "RiftDifficulty",
+				"ZombieLevelSwaps": [
+					{
+						"Level": 4,
+						"Swaps": [
+							{
+								"From": "RTID(zcorp@ZombieTypes)",
+								"To": [
+									"RTID(zcorp@ZombieTypes)",
+									"RTID(zcorp_fem@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(zcorp_armor1@ZombieTypes)",
+								"To": [
+									"RTID(zcorp_armor1@ZombieTypes)",
+									"RTID(zcorp_fem_armor1@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(zcorp_armor2@ZombieTypes)",
+								"To": [
+									"RTID(zcorp_armor2@ZombieTypes)",
+									"RTID(zcorp_fem_armor2@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 7,
+						"Swaps": [
+							{
+								"From": "RTID(zcorp@ZombieTypes)",
+								"To": [
+									"RTID(zcorp_armor1@ZombieTypes)",
+									"RTID(zcorp_fem_armor1@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(zcorp_armor1@ZombieTypes)",
+								"To": [
+									"RTID(zcorp_armor2@ZombieTypes)",
+									"RTID(zcorp_fem_armor2@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(zcorp_armor2@ZombieTypes)",
+								"To": [
+									"RTID(zcorp_armor2@ZombieTypes)",
+									"RTID(zcorp_fem_armor2@ZombieTypes)"
+								]
+							}
+						]
+					},
+					{
+						"Level": 10,
+						"Swaps": [
+							{
+								"From": "RTID(zcorp@ZombieTypes)",
+								"To": [
+									"RTID(zcorp_armor2@ZombieTypes)",
+									"RTID(zcorp_fem_armor2@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(zcorp_armor1@ZombieTypes)",
+								"To": [
+									"RTID(zcorp_armor2@ZombieTypes)",
+									"RTID(zcorp_fem_armor2@ZombieTypes)"
+								]
+							},
+							{
+								"From": "RTID(zcorp_armor2@ZombieTypes)",
+								"To": [
+									"RTID(zcorp_armor2@ZombieTypes)",
+									"RTID(zcorp_fem_armor2@ZombieTypes)"
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,1726 @@
+{
+    "#comment": "Scoring Playtest - Right Gradient - No Quickstart",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "",
+                "DisablePlantBoosts": true,
+                "GridItemLevel": 1,
+                "LevelNumber": 1,
+                "LevelPowerupSet": "LevelPowerupsDisabled",
+                "Loot": "RTID(NoLoot@LevelModules)",
+                "LossModule": "RTID(JoustOutro@LevelModules)",
+                "Modules": [
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(JoustZombieWinCondition@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(LevelScoring@CurrentLevel)",
+                    "RTID(ScoreTiles@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(LastStand@CurrentLevel)",
+                    "RTID(LevelDifficultyScaling@CurrentLevel)",
+                    "RTID(JoustModule@CurrentLevel)",
+                    "RTID(JoustDarkMowers@LevelModules)",
+                    "RTID(JoustPointOfLoss@LevelModules)"
+                ],
+                "Name": "",
+                "NormalPresentTable": "dark_normal_01",
+                "ShinyPresentTable": "dark_shiny_01",
+                "StageModule": "RTID(JoustStage@LevelModules)",
+                "SuppressAccountUpgrades": true,
+                "SuppressDynamicTutorial": true,
+                "SuppressPlantfoodPurchase": true,
+                "VictoryModule": "RTID(JoustOutro@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PresetPlantList": [
+                    {
+                        "Level": -1,
+                        "PlantType": "spikerock"
+                    }
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "JoustModule"
+            ],
+            "objclass": "JoustGameModuleProperties",
+            "objdata": {
+                "LeagueModifiers": [
+                    {
+                        "LeagueThreshold": 1,
+                        "AddZombieLevel": 0,
+                        "AddTimeLimit": 0
+                    },
+                    {
+                        "LeagueThreshold": 2,
+                        "AddZombieLevel": 1,
+                        "AddTimeLimit": 0
+                    },
+                    {
+                        "LeagueThreshold": 3,
+                        "AddZombieLevel": 2,
+                        "AddTimeLimit": 0
+                    },
+                    {
+                        "LeagueThreshold": 4,
+                        "AddZombieLevel": 3,
+                        "AddTimeLimit": 0
+                    },
+                    {
+                        "LeagueThreshold": 5,
+                        "AddZombieLevel": 4,
+                        "AddTimeLimit": 0
+                    },
+                    {
+                        "LeagueThreshold": 6,
+                        "AddZombieLevel": 5,
+                        "AddTimeLimit": 0
+                    },
+                    {
+                        "LeagueThreshold": 7,
+                        "AddZombieLevel": 6,
+                        "AddTimeLimit": 0
+                    },
+                    {
+                        "LeagueThreshold": 8,
+                        "AddZombieLevel": 7,
+                        "AddTimeLimit": 0
+                    },
+                    {
+                        "LeagueThreshold": 9,
+                        "AddZombieLevel": 8,
+                        "AddTimeLimit": 0
+                    }
+                ],
+                "TimeLimit": 180
+            }
+        },
+        {
+            "aliases": [
+                "LevelDifficultyScaling"
+            ],
+            "objclass": "LevelDifficultyScalingModuleProperties",
+            "objdata": {
+                "DifficultyRulesType": "DifficultyTestHighDecay"
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(BeatTheLevel@CurrentLevel)",
+                        "RTID(ReachTheScore@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "ReachTheScore"
+            ],
+            "objclass": "StarChallengeTargetScoreProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_TARGET_SCORE]",
+                "DescriptionFailure": "[STARCHALLENGE_TARGET_SCORE_FAILURE]",
+                "DescriptiveName": "[STARCHALLENGE_TARGET_SCORE_NAME]",
+                "TargetScore": 1000
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]",
+                "DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+            }
+        },
+        {
+            "aliases": [
+                "LastStand"
+            ],
+            "objclass": "LastStandMinigameProperties",
+            "objdata": {
+                "StartingPlantfood": 3,
+                "StartingSun": 750
+            }
+        },
+        {
+            "aliases": [
+                "LevelScoring"
+            ],
+            "objclass": "LevelScoringModuleProperties",
+            "objdata": {
+                "PlantBonusMultiplier": 0.1,
+                "PlantBonuses": [],
+                "ScoringRulesType": "Battlez",
+                "StartingPlantfood": 3
+            }
+        },
+        {
+            "aliases": [
+                "ScoreTiles"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 8,
+                        "GridY": 0,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 1,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 2,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 3,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 4,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 0,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 1,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 2,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 3,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 4,
+                        "TypeName": "score_5x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 0,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 1,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 2,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 3,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 4,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 0,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 1,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 2,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 3,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 4,
+                        "TypeName": "score_3x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 0,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 1,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 2,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 3,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 4,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 0,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 1,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 2,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 3,
+                        "TypeName": "score_2x_tile"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 4,
+                        "TypeName": "score_2x_tile"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "DynamicZombies": [
+                    {
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 200,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)",
+                            "RTID(eighties_imp@ZombieTypes)",
+                            "RTID(eighties_arcade@ZombieTypes)",
+                            "RTID(eighties_glitter@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 200,
+                        "StartingWave": 4,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)",
+                            "RTID(eighties_imp@ZombieTypes)",
+                            "RTID(eighties_arcade@ZombieTypes)",
+                            "RTID(eighties_glitter@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 200,
+                        "StartingWave": 5,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)",
+                            "RTID(eighties_imp@ZombieTypes)",
+                            "RTID(eighties_arcade@ZombieTypes)",
+                            "RTID(eighties_glitter@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 200,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)",
+                            "RTID(eighties_imp@ZombieTypes)",
+                            "RTID(eighties_arcade@ZombieTypes)",
+                            "RTID(eighties_glitter@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 200,
+                        "StartingWave": 5,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)",
+                            "RTID(eighties_imp@ZombieTypes)",
+                            "RTID(eighties_arcade@ZombieTypes)",
+                            "RTID(eighties_glitter@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 200,
+                        "StartingWave": 4,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)",
+                            "RTID(eighties_imp@ZombieTypes)",
+                            "RTID(eighties_arcade@ZombieTypes)",
+                            "RTID(eighties_glitter@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 200,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)",
+                            "RTID(eighties_imp@ZombieTypes)",
+                            "RTID(eighties_arcade@ZombieTypes)",
+                            "RTID(eighties_glitter@ZombieTypes)"
+                        ]
+                    }
+                ],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 18,
+                "WaveCount": 36,
+                "WaveSpendingPointIncrement": 100,
+                "WaveSpendingPoints": 100,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)",
+                        "RTID(Wave2GravestoneEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)",
+                        "RTID(Wave6GravestoneEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)",
+                        "RTID(Wave8GravestoneEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)",
+                        "RTID(Wave10GravestoneEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12@CurrentLevel)",
+                        "RTID(Wave12GravestoneEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14@CurrentLevel)",
+                        "RTID(Wave14GravestoneEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave16@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave18@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave20@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15HamsterStormEvent@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave22@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15HamsterStormEvent@CurrentLevel)"
+                    ]
+                ],
+                "WavesAlwaysRandomized": true
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave11"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave12"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave13"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave14"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave15"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave16"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave17"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave18"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave19"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave20"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave21"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave22"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave23"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave24"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave25"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave26"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave27"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave28"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave29"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave30"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave31"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave32"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave33"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave34"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave35"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Wave36"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Wave2GravestoneEvent"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_down@GridItemTypes)"
+                    },
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_up@GridItemTypes)"
+                    }
+                ],
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 6,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 4
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+                "DisplacePlants": true,
+                "RandomPlacement": false
+            }
+        },
+        {
+            "aliases": [
+                "Wave6GravestoneEvent"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_up@GridItemTypes)"
+                    },
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_down@GridItemTypes)"
+                    }
+                ],
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 5,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 3
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+                "DisplacePlants": true,
+                "RandomPlacement": false,
+                "GridClassesToDestroy": [
+                    "GridItemSliderTile"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10GravestoneEvent"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_up@GridItemTypes)"
+                    },
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_up@GridItemTypes)"
+                    },
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_up@GridItemTypes)"
+                    }
+                ],
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 7,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 4
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+                "DisplacePlants": true,
+                "RandomPlacement": false,
+                "GridClassesToDestroy": [
+                    "GridItemSliderTile"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave14GravestoneEvent"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_down@GridItemTypes)"
+                    },
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_down@GridItemTypes)"
+                    },
+                    {
+                        "Count": 1,
+                        "Type": "RTID(slider_down@GridItemTypes)"
+                    }
+                ],
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 7,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 0
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+                "DisplacePlants": true,
+                "RandomPlacement": false,
+                "GridClassesToDestroy": [
+                    "GridItemSliderTile"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3HamsterStormEvent"
+            ],
+            "objclass": "HamsterZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 4,
+                "ColumnStart": 3,
+                "GroupSize": 1,
+                "TimeBetweenGroups": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_glitter@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_glitter@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5HamsterStormEvent"
+            ],
+            "objclass": "HamsterZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 4,
+                "ColumnStart": 3,
+                "GroupSize": 1,
+                "TimeBetweenGroups": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_flag@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.75,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_mc@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_mc@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7HamsterStormEvent"
+            ],
+            "objclass": "HamsterZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 4,
+                "ColumnStart": 3,
+                "GroupSize": 1,
+                "TimeBetweenGroups": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_breakdancer@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_breakdancer@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_gargantuar@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8GravestoneEvent"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 5,
+                        "Type": "RTID(eightiesarcadecabinet@GridItemTypes)"
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 6,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 4
+                    }
+                ],
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+                "ShakeScreen": true
+            }
+        },
+        {
+            "aliases": [
+                "Wave9HamsterStormEvent"
+            ],
+            "objclass": "HamsterZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 4,
+                "ColumnStart": 3,
+                "GroupSize": 1,
+                "TimeBetweenGroups": 1,
+                "Zombies": [
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_flag@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.75,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_imp@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.5,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_boombox@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.4,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_boombox@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.4,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_punk@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_punk@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave11HamsterStormEvent"
+            ],
+            "objclass": "HamsterZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 4,
+                "ColumnStart": 3,
+                "GroupSize": 1,
+                "TimeBetweenGroups": 1.2,
+                "Zombies": [
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_mc@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_mc@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_mc@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_mc@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_gargantuar@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_gargantuar@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave12GravestoneEvent"
+            ],
+            "objclass": "SpawnGravestonesWaveActionProps",
+            "objdata": {
+                "GravestonePool": [
+                    {
+                        "Count": 6,
+                        "Type": "RTID(eightiesarcadecabinet@GridItemTypes)"
+                    }
+                ],
+                "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+                "SpawnPositionsPool": [
+                    {
+                        "mX": 6,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 6,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 4,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 4
+                    }
+                ],
+                "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+                "ShakeScreen": true
+            }
+        },
+        {
+            "aliases": [
+                "Wave13HamsterStormEvent"
+            ],
+            "objclass": "HamsterZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 4,
+                "ColumnStart": 3,
+                "GroupSize": 1,
+                "TimeBetweenGroups": 1.3,
+                "Zombies": [
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_boombox@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.4,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_boombox@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.4,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_punk@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_mc@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_gargantuar@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_gargantuar@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave15HamsterStormEvent"
+            ],
+            "objclass": "HamsterZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 4,
+                "ColumnStart": 3,
+                "GroupSize": 2,
+                "TimeBetweenGroups": 1.5,
+                "Zombies": [
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_glitter@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.7,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_boombox@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.4,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_punk@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_mc@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_gargantuar@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    },
+                    {
+                        "Type": "RTID(hamster_ball@ZombieTypes)",
+                        "ZombieInsideBallType": "RTID(eighties_gargantuar@ZombieTypes)",
+                        "HasPlantfood": false,
+                        "Behavior": 2,
+                        "SpeedBeforeImpact": 0.3,
+                        "AddedImmunities": [
+                            "chill",
+                            "freeze",
+                            "poisoned"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

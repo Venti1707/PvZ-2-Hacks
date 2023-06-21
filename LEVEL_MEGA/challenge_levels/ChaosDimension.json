@@ -1,0 +1,108 @@
+{
+	"IgnoreForValidation": "true",
+	"#comment"  : "THE CHAOS DIMENSION https://www.youtube.com/watch?feature=player_detailpage&v=M8mmyU1Zzcc#t=70s",
+	"version"   : 1,
+	"objects"   :
+	[
+		{
+			"objclass" : "LevelDefinition",
+			"objdata" :
+			{
+				"Name"			: "THE CHAOS DIMENSION",
+				"Description" 	: "Crazy Olaf's trip to the Chaos Dimension!",
+				"StageModule"	: "RTID(EgyptStage@LevelModules)",
+				"Loot"			: "RTID(DefaultLoot@LevelModules)",
+				"Modules"		: 
+				[
+					"RTID(PaddedRoomProps@CurrentLevel)",
+					"RTID(RandomSpawner@CurrentLevel)",
+					"RTID(CrazyOlaf@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases" : ["PaddedRoomProps"],
+			"objclass" : "PaddedRoomProperties",
+			"objdata" :
+			{
+			}
+		},
+        {
+            "aliases": [
+                "PiratePlanks"
+            ],
+            "objclass": "PiratePlankProperties",
+            "objdata": {
+                "PlankRows": [0, 1, 3, 4]
+            }
+        },
+		{
+			"objclass" : "CrazyOlafTestProperties",
+			"aliases" : [ "CrazyOlaf" ],
+			"objdata" :
+			{
+				"ActionTimer" : 0.25,
+				"MaxPlantTypes" : 40,
+				"MaxPerType" : 2,
+				"PlantBeforeColumn" : 6,
+				"PlantRequiredList" : [
+				],
+				"Actions" : [
+					{ "Action" : "Shovel", 			"Weight" : 50 },
+					{ "Action" : "PlantSingle",		"Weight" : 80 },
+					{ "Action" : "PlantColumn", 	"Weight" : 15 },
+					{ "Action" : "PlantfoodSingle", "Weight" : 25 },
+					{ "Action" : "SpawnCreature",	"Weight" :  5 }
+				],
+				"CreatureList" : [
+					{ "CreatureTypeName" : "dinostego", "MaxCountInRow" : 1 },
+					{ "CreatureTypeName" : "dinoraptor", "MaxCountInRow" : 1 },
+					{ "CreatureTypeName" : "dinoptero", "MaxCountInRow" : 1 },
+					{ "CreatureTypeName" : "dinotyranno", "MaxCountInRow" : 1 },
+					{ "CreatureTypeName" : "dinoankylo", "MaxCountInRow" : 1 }
+								  
+				]
+			}
+		},
+		{
+			"objclass" : "SimpleZombieSpawnerProperties",
+			"aliases" : [ "RandomSpawner" ],
+			"objdata" :
+			{
+				"Stages" :
+				[
+					{
+						"Types" :
+						[
+							{
+								"ZombieType" : "dino_armor3"
+							},
+							{
+								"ZombieType" : "random"
+							},
+							{
+								"ZombieType" : "random"
+							},
+							{
+								"ZombieType" : "random"
+							},
+							{
+								"ZombieType" : "random"
+							},
+							{
+								"ZombieType" : "random"
+							},
+							{
+								"ZombieType" : "random"
+							},
+							{
+								"ZombieType" : "random"
+							}
+						],
+						"SpawnDelay" : 1.0
+					}
+				]					
+			}
+		}
+	]
+}

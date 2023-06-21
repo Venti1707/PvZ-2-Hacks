@@ -1,0 +1,175 @@
+{
+	"IgnoreForValidation": "true",
+    "#comment": "SandboxLostCity",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "Lost City Sandbox Level",
+                "LevelNumber": 42,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(ZombossIntro@LevelModules)",
+					"RTID(ZombossBattle@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(BoulderTraps@CurrentLevel)",
+                    "RTID(ConveyorBelt@CurrentLevel)"
+                ],
+                "Name": "Lost City Sandbox",
+                "StageModule": "RTID(LostCityStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "BoulderTraps"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 7,
+                        "GridY": 1,
+                        "TypeName": "boulder_trap1"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 2,
+                        "TypeName": "boulder_trap1"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 3,
+                        "TypeName": "boulder_trap1"
+                    },
+					{
+                        "GridX": 1,
+                        "GridY": 1,
+                        "TypeName": "boulder_trap2"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 2,
+                        "TypeName": "boulder_trap2"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 3,
+                        "TypeName": "boulder_trap2"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 1,
+                        "TypeName": "boulder_trap3"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 2,
+                        "TypeName": "boulder_trap3"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 3,
+                        "TypeName": "boulder_trap3"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 4,
+                        "TypeName": "flame_spreader_trap"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 4,
+                        "TypeName": "boulder_trap_falling_forward"
+                    }
+                ]
+            }
+        },
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
+			"objclass": "ZombossBattleModuleProperties",
+			"objdata": {
+				"ReservedColumnCount": 3,
+				"ZombossDeathColumn": 5,
+				"ZombossDeathRow": 3,
+				"ZombossMechType": "zombossmech_lostcity",
+				"ZombossSpawnGridPosition": {
+					"mX": 6,
+					"mY": 3
+				}
+			}
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
+			"objclass": "ConveyorSeedBankProperties",
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 2,
+						"MaxPackets": 0
+					},
+					{
+						"Delay": 3,
+						"MaxPackets": 2
+					},
+					{
+						"Delay": 5,
+						"MaxPackets": 4
+					},
+					{
+						"Delay": 8,
+						"MaxPackets": 8
+					}
+				],
+				"InitialPlantList": [
+					{
+						"MaxCount": 5,
+						"MaxWeightFactor": 0,
+						"PlantType": "endurian",
+						"Weight": 15
+					},
+					{
+						"MaxCount": 2,
+						"MaxWeightFactor": 0,
+						"PlantType": "redstinger",
+						"Weight": 10
+					},
+					{
+						"MaxCount": 15,
+						"MaxWeightFactor": 0,
+						"PlantType": "stallia",
+						"Weight": 20
+					},
+					{
+						"MaxCount": 15,
+						"MaxWeightFactor": 0,
+						"PlantType": "cabbagepult",
+						"Weight": 28
+					},
+					{
+						"MaxCount": 15,
+						"MaxWeightFactor": 0,
+						"PlantType": "akee",
+						"Weight": 35
+					},
+					{
+						"MaxCount": 5,
+						"MaxWeightFactor": 0,
+						"PlantType": "goldleaf",
+						"Weight": 2
+					}
+				],
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0,
+						"Speed": 100
+					}
+				]
+			}
+		}
+    ],
+    "version": 1
+}

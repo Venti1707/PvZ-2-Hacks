@@ -1,0 +1,134 @@
+[BLOOMERANG_PLANTFOOD]
+Throws many boomerangs that hit all the zombies to the left, right, above, and below.
+
+[BLOVER_PLANTFOOD]
+No Plant Food effect.
+
+[BONKCHOY_PLANTFOOD]
+Attacks with a flurry of fists, doing massive damage to anything on nearby tiles.
+
+[CABBAGEPULT_PLANTFOOD]
+Hits every zombie on the lawn with a large cabbage.
+
+[CHARDGUARD_PLANTFOOD]
+Returns to full health, then damages and pushes back zombies in 6 adjacent tiles.
+
+[CHERRY_BOMB_PLANTFOOD]
+No Plant Food effect.
+
+[CHILIBEAN_PLANTFOOD]
+Launches out 3 Chili Bean clones to random locations on the lawn.
+
+[CHOMPER_PLANTFOOD]
+CHOMPER_PLANTFOOD
+
+[COCONUTCANNON_PLANTFOOD]
+Fires a huge cannonball that pushes the zombies it hits to the right side of the lawn and then explodes.
+
+[EMPEA_PLANTFOOD]
+No Plant Food effect.
+
+[FIREPEASHOOTER_PLANTFOOD]
+Throws a line of flame down the lane, damaging all zombies in it.
+
+[GRAVEBUSTER_PLANTFOOD]
+No Plant Food effect.
+
+[HOLONUT_PLANTFOOD]
+HOLONUT_PLANTFOOD
+
+[ICEBURG_PLANTFOOD]
+Flash freezes all zombies on the lawn.
+
+[IMITATER_PLANTFOOD]
+Performs Plant Food effect of the plant it's imitating.
+
+[JALAPENO_PLANTFOOD]
+No Plant Food effect.
+
+[KERNELPULT_PLANTFOOD]
+Triggers a butter storm that stuns every zombie on the lawn for a few seconds.
+
+[LASER_BEAN_PLANTFOOD]
+LASER_BEAN_PLANTFOOD
+
+[LIGHTNINGREED_PLANTFOOD]
+Launches a cloud that travels around the lawn, zapping zombies with lightning as it hovers over them.
+
+[MAGNIFYINGGRASS_PLANTFOOD]
+MAGNIFYINGGRASS_PLANTFOOD
+
+[MARIGOLD_PLANTFOOD]
+MARIGOLD_PLANTFOOD
+
+[MELONPULT_PLANTFOOD]
+Heavy melons are launched up that target every zombie on the lawn.
+
+[PEAPOD_PLANTFOOD]
+Monstrous Peashooter head emerges and shoots 5 giant peas.
+
+[PEASHOOTER_PLANTFOOD]
+Fires off a stream of peas, adding up to a lot of damage.
+
+[PEPPERPULT_PLANTFOOD]
+Lobs massive explosive peppers at random targets on the lawn, while melting nearby ice.
+
+[POTATOMINE_PLANTFOOD]
+Immediately arms itself, and launches out 2 armed clones to random tiles on the lawn.
+
+[POWERLILY_PLANTFOOD]
+No Plant Food effect.
+
+[REPEATER_PLANTFOOD]
+Fires a stream of peas followed by a giant pea that does huge damage to one target.
+
+[SNAPDRAGON_PLANTFOOD]
+Creates a 3x3 patch of fire that does massive damage.
+
+[SNOWPEA_PLANTFOOD]
+Fires a stream of frozen peas and creates a sheet of ice that chills everything in its lane. 
+
+[SPIKEROCK_PLANTFOOD]
+Metal spikes push all zombies in its lane onto itself, damaging them in the process.
+
+[SPIKEWEED_PLANTFOOD]
+Spikes push all zombies in its lane onto itself, damaging them in the process.
+
+[SPLITPEA_PLANTFOOD]
+Performs the Plant Food effect of the Peashooter to the front and the Repeater to the back.
+
+[SPRINGBEAN_PLANTFOOD]
+Slams down, causing all zombies on the lawn to bounce back to the right.
+
+[SQUASH_PLANTFOOD]
+Squashes multiple tough targets on the lawn before returning to its original location.
+
+[STARFRUIT_PLANTFOOD]
+STARFRUIT_PLANTFOOD
+
+[STUNION_PLANTFOOD]
+Immediately breathes a large cloud of stunning gas to the right, across three lanes. 
+
+[SUNFLOWER_PLANTFOOD]
+Produces multiple suns instantly.
+
+[TALLNUT_PLANTFOOD]
+Becomes encased in metal armor, greatly increasing its health.
+
+[THREEPEATER_PLANTFOOD]
+Fires off a waving wall of peas across the lawn.
+
+[TORCHWOOD_PLANTFOOD]
+Permanently turns into a blue-fire version, with blue-fire peas doing twice the damage of fire peas.
+
+[TWINSUNFLOWER_PLANTFOOD]
+Produces many additional suns instantly.
+
+[WALLNUT_PLANTFOOD]
+Becomes encased in metal armor, greatly increasing its health.
+
+[WINTERMELON_PLANTFOOD]
+Chilling, heavy melons are launched up that target every zombie on the lawn.
+
+[XSHOT_PLANTFOOD]
+Fires a rapid stream of shots in all four diagonal directions.

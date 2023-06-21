@@ -1,0 +1,357 @@
+{
+    "#comment": "Modern 8 v1",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_TRIP_TO_RIFT]",
+                "Loot": "",
+                "LevelNumber": "",
+                "LevelPowerupSet": "LevelPowerupsBeghouled",
+                "Modules": [
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(BeghouledRiftIntro@LevelModules)",
+                    "RTID(ModernMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(RandomSpawner@CurrentLevel)",
+                    "RTID(BeghouledSeedBank@CurrentLevel)",
+                    "RTID(BeghouledProps@CurrentLevel)",
+                    "RTID(PerkActivator@CurrentLevel)",
+                    "RTID(LevelDifficultyScaling@CurrentLevel)"
+                ],
+                "MusicType": "MiniGame_B",
+                "Name": "[RIFT_LEVEL_NAME]",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "VictoryModule": "RTID(RiftOutro@LevelModules)",
+                "StageModule": "RTID(ModernStage@LevelModules)",
+                "LevelMutator": "RTID(LevelMutator@CurrentLevel)",
+                "PerksDisabledInLevel": [
+                    "bossbustercannon",
+                    "mineisyours",
+                    "moarscore",
+                    "applyconditionplantfood",
+                    "mineisyours_shinevine",
+                    "mineisyours_goldbloom"
+                ],
+                "PerksDisabledPerDifficulty": [
+                    [],
+                    [],
+                    []
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LevelDifficultyScaling"
+            ],
+            "objclass": "LevelDifficultyScalingModuleProperties",
+            "objdata": {
+                "DifficultyRulesType": "RiftDifficulty",
+                "ZombieLevelSwaps": []
+            }
+        },
+        {
+            "aliases": [
+                "PerkActivator"
+            ],
+            "objclass": "PerkHandlerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "LevelMutator"
+            ],
+            "objclass": "LevelMutatorModuleProperties",
+            "objdata": {
+                "MutatorTables": [
+                    "RTID(MutatorPropsBeghouled@LevelMutatorTables)",
+                    "RTID(LocalChallengeMutator@CurrentLevel)",
+                    "RTID(LocalMainChallengeMutator@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LocalMainChallengeMutator"
+            ],
+            "objclass": "LevelMutatorTableProps",
+            "objdata": {
+                "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [
+                            "RTID(BeatTheLevel@CurrentLevel)"
+                        ],
+                        "ModuleType": "mainchallenge"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_PRESET_PLANTS]",
+                "DescriptiveName": "[STARCHALLENGE_PRESET_PLANTS_NAME]"
+            }
+        },
+        {
+            "aliases": [
+                "LocalChallengeMutator"
+            ],
+            "objclass": "LevelMutatorTableProps",
+            "objdata": {
+                "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [
+                            "RTID(KillZombies1@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [
+                            "RTID(KillZombies2@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [
+                            "RTID(KillZombies3@CurrentLevel)"
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "KillZombies1"
+            ],
+            "objclass": "StarChallengeKillZombiesInTimeProps",
+            "objdata": {
+                "Time": 60,
+                "ZombiesToKill": 125
+            }
+        },
+        {
+            "aliases": [
+                "KillZombies2"
+            ],
+            "objclass": "StarChallengeKillZombiesInTimeProps",
+            "objdata": {
+                "Time": 60,
+                "ZombiesToKill": 125
+            }
+        },
+        {
+            "aliases": [
+                "KillZombies3"
+            ],
+            "objclass": "StarChallengeKillZombiesInTimeProps",
+            "objdata": {
+                "Time": 60,
+                "ZombiesToKill": 125
+            }
+        },
+        {
+            "objclass": "BeghouledSeedBankProperties",
+            "aliases": [
+                "BeghouledSeedBank"
+            ],
+            "objdata": {
+                "PresetPlantList": [
+                    {
+                        "PlantType": "firepeashooter",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "repeater",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "tallnut",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "endurian",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "pepperpult",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "melonpult",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "coldsnapdragon",
+                        "Level": -1
+                    },
+                    {
+                        "PlantType": "laser_bean",
+                        "Level": -1
+                    }
+                ],
+                "BeghouledUpgradeList": [
+                    "threepeater",
+                    "wintermelon"
+                ],
+                "SelectionMethod": "beghouled"
+            }
+        },
+        {
+            "objclass": "BeghouledZombieSpawnerProperties",
+            "aliases": [
+                "RandomSpawner"
+            ],
+            "objdata": {
+                "MatchCountsToStageAdvance": [
+                    {
+                        "MatchCount": 30,
+                        "StageNumber": 1
+                    },
+                    {
+                        "MatchCount": 70,
+                        "StageNumber": 2
+                    }
+                ],
+                "Stages": [
+                    {
+                        "#comment": "Stage 0",
+                        "Types": [
+                            {
+                                "ZombieType": "tutorial"
+                            },
+                            {
+                                "ZombieType": "tutorial_armor1"
+                            },
+                            {
+                                "ZombieType": "tutorial_armor2"
+                            }
+                        ],
+                        "SpawnDelay": 1.35
+                    },
+                    {
+                        "#comment": "Stage 1",
+                        "Types": [
+                            {
+                                "ZombieType": "roman"
+                            },
+                            {
+                                "ZombieType": "roman_armor1"
+                            },
+                            {
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "ZombieType": "roman_shield_triad"
+                            }
+                        ],
+                        "SpawnDelay": 1.3
+                    },
+                    {
+                        "#comment": "Stage 2",
+                        "Types": [
+                            {
+                                "ZombieType": "roman_shield_triad"
+                            },
+                            {
+                                "ZombieType": "roman_armor1"
+                            },
+                            {
+                                "ZombieType": "tutorial_armor2"
+                            },
+                            {
+                                "ZombieType": "beghouled_newspaper"
+                            },
+                            {
+                                "ZombieType": "roman_armor3"
+                            }
+                        ],
+                        "SpawnDelay": 1.25
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "BeghouledPresetProperties",
+            "aliases": [
+                "BeghouledProps"
+            ],
+            "objdata": {
+                "MatchesToWin": 100,
+                "InitialPlants": [
+                    "peashooter",
+                    "wallnut",
+                    "cabbagepult",
+                    "snapdragon",
+                    "lightningreed"
+                ],
+                "UpgradeMap": [
+                    {
+                        "BasePlant": "peashooter",
+                        "UpgradedPlant": "firepeashooter"
+                    },
+                    {
+                        "BasePlant": "peashooter",
+                        "UpgradedPlant": "repeater"
+                    },
+                    {
+                        "BasePlant": "repeater",
+                        "UpgradedPlant": "threepeater"
+                    },
+                    {
+                        "BasePlant": "wallnut",
+                        "UpgradedPlant": "tallnut"
+                    },
+                    {
+                        "BasePlant": "wallnut",
+                        "UpgradedPlant": "endurian"
+                    },
+                    {
+                        "BasePlant": "cabbagepult",
+                        "UpgradedPlant": "pepperpult"
+                    },
+                    {
+                        "BasePlant": "cabbagepult",
+                        "UpgradedPlant": "melonpult"
+                    },
+                    {
+                        "BasePlant": "melonpult",
+                        "UpgradedPlant": "wintermelon"
+                    },
+                    {
+                        "BasePlant": "snapdragon",
+                        "UpgradedPlant": "coldsnapdragon"
+                    },
+                    {
+                        "BasePlant": "lightningreed",
+                        "UpgradedPlant": "laser_bean"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

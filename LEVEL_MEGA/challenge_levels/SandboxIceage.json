@@ -1,0 +1,104 @@
+{
+    "IgnoreForValidation": "true",
+	"#comment": "SandboxIceage",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "Ice Age Sandbox Level",
+				"LevelNumber": 42,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"StageModule"	: "RTID(IceageStage@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(IceageMowers@LevelModules)",
+					"RTID(SandboxIceageSeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(SliderPlacement@CurrentLevel)",
+                    "RTID(FrozenPlantPlacement@CurrentLevel)"
+				],
+				"Name": "Ice Age Sandbox"
+			}
+		},
+		{
+			"aliases": [
+				"SandboxIceageSeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantExcludeList": [],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+            "aliases": [
+                "SliderPlacement"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 3,
+                        "GridY": 0,
+                        "TypeName": "slider_down"
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 1,
+                        "TypeName": "slider_down"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 3,
+                        "TypeName": "slider_up"
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 3,
+                        "TypeName": "slider_down"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 4,
+                        "TypeName": "slider_up"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 4,
+                        "TypeName": "slider_up"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "FrozenPlantPlacement"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "Condition": "icecubed",
+                        "GridX": 0,
+                        "GridY": 0,
+                        "TypeName": "sunflower"
+                    },
+                    {
+                        "Condition": "icecubed",
+                        "GridX": 0,
+                        "GridY": 1,
+                        "TypeName": "peashooter"
+                    },
+                    {
+                        "Condition": "icecubed",
+                        "GridX": 0,
+                        "GridY": 2,
+                        "TypeName": "wallnut"
+                    }
+                ]
+            }
+        }
+	],
+	"version": 1
+}
